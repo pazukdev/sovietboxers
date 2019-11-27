@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="backgrounded-area" style="background: #101010">
+        <div class="backgrounded-area">
             v 2.0
         </div>
 

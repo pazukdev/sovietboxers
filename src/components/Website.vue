@@ -4,11 +4,11 @@
         <MotorcycleGallery></MotorcycleGallery>
 
         <div class="backgrounded-area">
-            <p>
-                Soviet Boxers' Seals & Bearings - it is a little phone application about old Soviet boxers, where you
-                can find information about seals, bearings and some other standard parts using in different models of
-                old Soviet boxers: catalogue part numbers, dimensions and information about existing alternative parts
-                for replacement
+            <p id="app-main-description">
+                <span class="colored-text">Soviet Boxers' Seals & Bearings</span>
+                - is an app where you can find information about seals, bearings and some other standard parts of
+                different models of Soviet boxers and some other old motorcycles: catalogue part numbers, dimensions
+                and alternative parts for replacement
             </p>
         </div>
 
