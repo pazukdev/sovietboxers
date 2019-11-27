@@ -28,11 +28,12 @@
 
 <style scoped>
     #header-main-div {
-
+        overflow: hidden;
     }
 
     img {
         float: left;
+        height: 200px;
     }
 
     #app-title-description {

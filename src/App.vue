@@ -47,12 +47,9 @@
 
   }
 
-  /*@media only screen and (max-width: 1280px) {*/
-  /*  #main-div {*/
-  /*    width: 100%;*/
-  /*    height: 100%;*/
-  /*  }*/
-  /*}*/
+  @media only screen and (max-width: 640px) {
+
+  }
 
   table, button, select, input {
     text-align: center;
