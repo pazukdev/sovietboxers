@@ -10,6 +10,7 @@
                 different models of Soviet boxers and some other old motorcycles: catalogue part numbers, dimensions
                 and alternative parts for replacement
             </p>
+            <TryAppLink></TryAppLink>
         </div>
 
         <div class="backgrounded-area">
@@ -49,6 +50,7 @@
 <script>
     import Header from "@/components/Header";
     import MotorcycleGallery from "@/components/MotorcycleGallery";
+    import TryAppLink from "@/components/TryAppLink";
     import WebsiteFooter from "@/components/WebsiteFooter";
 
     export default {
@@ -57,6 +59,7 @@
         components: {
             Header,
             MotorcycleGallery,
+            TryAppLink,
             WebsiteFooter
         }
     }
