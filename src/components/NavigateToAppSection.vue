@@ -22,7 +22,8 @@
         <a href="#" class="overlay" id="smartphone-view"></a>
         <div class="popup">
             <a class="close" title="Close" href="javascript:history.back()">X</a>
-            <MobileEmulator></MobileEmulator>
+            <MobileEmulator v-if="false"></MobileEmulator>
+            <IPhoneEmulator></IPhoneEmulator>
 <!--            <img src="../assets/model_m66.png">-->
         </div>
     </div>
@@ -30,12 +31,14 @@
 
 <script>
     import MobileEmulator from "@/components/MobileEmulator";
+    import IPhoneEmulator from "@/components/IPhoneEmulator";
 
     export default {
         name: "NavigateToAppSection",
 
         components: {
-            MobileEmulator
+            MobileEmulator,
+            IPhoneEmulator
         }
     }
 </script>

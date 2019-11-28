@@ -35,15 +35,6 @@
 </script>
 
 <style scoped>
-
-    .test {
-        --var-device-width: #c1d32f;
-    }
-
-    /*.test-child-node {*/
-    /*    background-color: var(--var-txt-color);*/
-    /*}*/
-
     iframe {
         border: none;
         width: 100%;
