@@ -11,7 +11,7 @@
 
 <script>
     export default {
-        name: "FakeMobile"
+        name: "MobileEmulator"
     }
 </script>
 
@@ -65,18 +65,5 @@
         width: 44vh;
         height: 80vh;
         background: white;
-    }
-
-    @media only screen and (max-width: 1000px) {
-        /*.smartphone {*/
-        /*    position: relative;*/
-        /*    width: 360px;*/
-        /*    !*height: 70vh;*!*/
-        /*    margin: auto;*/
-        /*    border: 16px black solid;*/
-        /*    border-top-width: 60px;*/
-        /*    border-bottom-width: 60px;*/
-        /*    border-radius: 36px;*/
-        /*}*/
     }
 </style>

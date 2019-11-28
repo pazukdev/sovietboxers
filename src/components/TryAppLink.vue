@@ -1,7 +1,7 @@
 <template>
     <div id="navigate-to-app">
         <p>
-            <a href="#win9"
+            <a href="#smartphone"
                class="button2"
                title="Click to try the app online">
                 <img alt="smartphone button" src='../assets/smartphone_button.png'/>
@@ -19,10 +19,11 @@
             </a>
         </p>
 
-        <a href="#x" class="overlay" id="win9"></a>
-        <div class="popup_i">
-            <FakeMobile></FakeMobile>
-            <a class="close" title="Close" href="javascript:history.back()"></a>
+        <a href="#" class="overlay" id="smartphone"></a>
+        <div class="popup">
+            <a class="close" title="Close" href="javascript:history.back()">X</a>
+            <MobileEmulator></MobileEmulator>
+<!--            <img src="../assets/model_m66.png">-->
             <a class="start-app"
                title="Start the app"
                target="iframe_a"
@@ -34,11 +35,14 @@
 </template>
 
 <script>
-    import FakeMobile from "@/components/FakeMobile";
+    import MobileEmulator from "@/components/MobileEmulator";
 
     export default {
         name: "TryAppLink",
-        components: {FakeMobile}
+
+        components: {
+            MobileEmulator
+        }
     }
 </script>
 
@@ -54,56 +58,58 @@
         padding: initial;
     }
 
-     /*активируем слой затемнения */
-    /*.overlay:target {*/
-    /*    visibility: visible;*/
-    /*    opacity: 1;*/
-    /*}*/
-
-    .popup_i {
-        top: 50%;
-        left: 50%;
+    /* The Modal (background) */
+    .overlay {
+        visibility: hidden;
         position: fixed;
-        transform: translate(-50%, -500%);
+        z-index: 99;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        display: block;
+    }
+
+    .overlay:target {
+        visibility: visible;
+    }
+
+    .popup {
+        position: fixed;
+        top: 2%;
+        left: 35%;
+        z-index: 100;
+        transform: translate(25%, -500%); /*hide modal: (middle, outside on the top)*/
         transition: transform 0.6s ease-out;
     }
 
-    .overlay:target+.popup_i {
-        transform: translate(-50%, -50%);
+    .overlay:target + .popup {
+        transform: translate(0, 0);
     }
 
     .close {
-        top: 10px;
-        right: -40px;
         width: 20px;
         height: 20px;
+        border-radius: 10px;
+        left: 100%;
         position: absolute;
         padding: 0;
-        /*border: 2px solid #707070;*/
-        border-radius: 15px;
-        text-align: center;
+        text-align: end;
         text-decoration: none;
         font-weight: bold;
         transition: all ease .8s;
     }
 
-    .close:before {
-        content: "X";
-    }
-
     .close:hover {
         color: #101010;
-        background-color: #D88C00;
     }
 
     .start-app {
         top: 20px;
         right: 230px;
-        /*width: 20px;*/
-        /*height: 20px;*/
         position: absolute;
         padding: 0;
-        /*border: 2px solid #707070;*/
         border-radius: 15px;
         text-align: center;
         font-weight: bold;
