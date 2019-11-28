@@ -1,7 +1,7 @@
 <template>
     <div id="navigate-to-app">
         <p>
-            <a href="#smartphone"
+            <a href="#smartphone-view"
                class="button2"
                title="Click to try the app online">
                 <img alt="smartphone button" src='../assets/smartphone_button.png'/>
@@ -19,7 +19,7 @@
             </a>
         </p>
 
-        <a href="#" class="overlay" id="smartphone"></a>
+        <a href="#" class="overlay" id="smartphone-view"></a>
         <div class="popup">
             <a class="close" title="Close" href="javascript:history.back()">X</a>
             <MobileEmulator></MobileEmulator>
@@ -61,7 +61,8 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.8);
+        background: rgba(0, 0, 0, 0.9);
+        /*background: black;*/
         display: block;
     }
 

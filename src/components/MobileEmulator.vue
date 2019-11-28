@@ -7,7 +7,7 @@
                    target="iframe_a"
                    @click="hideStartAppLink()"
                    v-if="showStartAppLink"
-                   href="https://pazukdev.github.io/sovietboxers/">
+                   href="https://vue-page-test-pazukdev.herokuapp.com/">
                     Start the app!
                 </a>
                 <iframe name="iframe_a" v-if="!showStartAppLink"></iframe>
@@ -35,6 +35,15 @@
 </script>
 
 <style scoped>
+
+    .test {
+        --var-device-width: #c1d32f;
+    }
+
+    /*.test-child-node {*/
+    /*    background-color: var(--var-txt-color);*/
+    /*}*/
+
     iframe {
         border: none;
         width: 100%;
@@ -47,40 +56,36 @@
         /*width: 360px;*/
         /*height: 640px;*/
         width: 44vh;
-        height: 80vh;
+        height: 70vh;
         margin: auto;
-        border: 16px black solid;
-        border-top-width: 60px;
-        border-bottom-width: 60px;
-        border-radius: 36px;
+        padding: 90px 10px;
+        border: 5px #2f2f2f solid;
+        border-radius: 60px;
+        background-color: #050505;
     }
 
-    /* The horizontal line on the top of the device */
+    .smartphone:before, .smartphone:after {
+        content: '';
+        position: absolute;
+        z-index: 2;
+    }
+
     .smartphone:before {
-        content: '';
-        display: block;
-        width: 60px;
-        height: 5px;
-        position: absolute;
-        top: -30px;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background: #333;
+        width: 20%;
+        height: 10px;
+        top: 40px;
+        left: 40%;
         border-radius: 10px;
+        background-color: #2f2f2f;
     }
 
-    /* The circle on the bottom of the device */
     .smartphone:after {
-        content: '';
-        display: block;
-        width: 35px;
-        height: 35px;
-        position: absolute;
-        left: 50%;
-        bottom: -65px;
-        transform: translate(-50%, -50%);
-        background: #333;
+        width: 50px;
+        height: 50px;
         border-radius: 50%;
+        border: solid 5px #2f2f2f;
+        left: calc(50% - 25px);
+        bottom: 20px;
     }
 
      /*The screen (or content) of the device */
@@ -88,7 +93,7 @@
         /*width: 360px;*/
         /*height: 640px;*/
         width: 44vh;
-        height: 80vh;
+        height: 70vh;
         background: #212121;
         display: flex;
         justify-content: center;
