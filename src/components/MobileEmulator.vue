@@ -1,9 +1,16 @@
 <template>
     <div class="backgrounded-area">
-<!--        <p><a href="https://pazukdev.github.io/sovietboxers/" target="iframe_a">Try the app</a></p>-->
         <div class="smartphone">
             <div class="content">
-                <iframe name="iframe_a" style="width:100%;border:none;height:100%"></iframe>
+                <a class="start-app"
+                   title="Start the app"
+                   target="iframe_a"
+                   @click="hideStartAppLink()"
+                   v-if="showStartAppLink"
+                   href="https://pazukdev.github.io/sovietboxers/">
+                    Start the app!
+                </a>
+                <iframe name="iframe_a" v-if="!showStartAppLink"></iframe>
             </div>
         </div>
     </div>
@@ -11,11 +18,29 @@
 
 <script>
     export default {
-        name: "MobileEmulator"
+        name: "MobileEmulator",
+
+        data() {
+            return {
+                showStartAppLink: true
+            }
+        },
+
+        methods: {
+            hideStartAppLink() {
+                this.showStartAppLink = false;
+            }
+        }
     }
 </script>
 
 <style scoped>
+    iframe {
+        border: none;
+        width: 100%;
+        height: 100%;
+    }
+
     /* The device with borders */
     .smartphone {
         position: relative;
@@ -64,6 +89,9 @@
         /*height: 640px;*/
         width: 44vh;
         height: 80vh;
-        background: white;
+        background: #212121;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 </style>

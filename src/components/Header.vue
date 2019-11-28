@@ -28,7 +28,7 @@
 
 <style scoped>
     #header-main-div {
-        overflow: hidden;
+        overflow: auto;
     }
 
     img {

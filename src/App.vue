@@ -1,6 +1,6 @@
 <template id="app">
   <div id="main-div">
-    <Website></Website>
+    <Website id="website"></Website>
   </div>
 </template>
 
@@ -35,16 +35,6 @@
     width: 100%;
     height: 100%;
     background: black;
-  }
-
-  #screen {
-    overflow: auto;
-    background-color: #212121;
-    color: #808080;
-    width: 480px;
-    height: 800px;
-    border-radius: 10px;
-
   }
 
   @media only screen and (max-width: 640px) {

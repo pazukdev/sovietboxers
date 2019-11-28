@@ -24,12 +24,6 @@
             <a class="close" title="Close" href="javascript:history.back()">X</a>
             <MobileEmulator></MobileEmulator>
 <!--            <img src="../assets/model_m66.png">-->
-            <a class="start-app"
-               title="Start the app"
-               target="iframe_a"
-               href="https://pazukdev.github.io/sovietboxers/">
-                Start the app!
-            </a>
         </div>
     </div>
 </template>
@@ -38,7 +32,7 @@
     import MobileEmulator from "@/components/MobileEmulator";
 
     export default {
-        name: "TryAppLink",
+        name: "NavigateToAppSection",
 
         components: {
             MobileEmulator
@@ -103,16 +97,5 @@
 
     .close:hover {
         color: #101010;
-    }
-
-    .start-app {
-        top: 20px;
-        right: 230px;
-        position: absolute;
-        padding: 0;
-        border-radius: 15px;
-        text-align: center;
-        font-weight: bold;
-        transition: all ease .8s;
     }
 </style>
