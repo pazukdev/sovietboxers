@@ -7,7 +7,7 @@
                    target="iframe_a"
                    @click="hideStartAppLink()"
                    v-if="showStartAppLink"
-                   href="https://vue-page-test-pazukdev.herokuapp.com/">
+                   href="https://vue-page-test-pazukdev.herokuapp.com">
                     Start the app!
                 </a>
                 <iframe name="iframe_a" v-if="!showStartAppLink"></iframe>

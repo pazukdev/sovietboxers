@@ -76,15 +76,6 @@
     color: #050505;
   }
 
-  table {
-    border-spacing: 6px;
-    border-collapse: separate;
-  }
-
-  th {
-    font-weight: normal;
-  }
-
   img {
     max-width: 100%;
     max-height: 100%;

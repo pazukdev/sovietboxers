@@ -1,28 +1,42 @@
 <template>
     <div id="navigate-to-app">
-        <p>
-            <a href="#smartphone-view"
-               class="button2"
-               title="Click to try the app online">
-                <img alt="smartphone button" src='../assets/smartphone_button.png'/>
-            </a>
-        </p>
-
-        <p>
-            <a id="google_link"
-               target="_blank"
-               title="App on GooglePlay"
-               href='https://play.google.com/store/apps/details?id=by.pazukdev.sovietboxersbearings&hl=en&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
-                <img width="140"
-                     alt='Get it on Google Play'
-                     src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/>
-            </a>
-        </p>
+        <table>
+            <tbody>
+            <tr v-if="false">
+                <td>
+                    For Android OS devices<br>
+                    <a id="google_link"
+                       target="_blank"
+                       title="App on GooglePlay"
+                       href='https://play.google.com/store/apps/details?id=by.pazukdev.sovietboxersbearings&hl=en&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+                        <img id="google-play-img" alt='Get it on Google Play'
+                             src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    For IOS devices, laptop and PC<br>
+                    <a target="_blank" href="https://vue-page-test-pazukdev.herokuapp.com">Direct link to the app</a>
+                </td>
+            </tr>
+            <tr id="pc-only-tr">
+                <td>
+                    For PC<br>
+                    <a href="#smartphone-view"
+                       class="button2"
+                       title="Click to open the app">
+                        <img style="height: 200px" alt="smartphone button" src='../assets/iphone-device.png'/>
+                    </a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
 
         <a href="#" class="overlay" id="smartphone-view"></a>
         <div class="popup">
             <a class="close" title="Close" href="javascript:window.location = '/'">X</a>
-            <MobileEmulator v-if="false"></MobileEmulator>
+<!--            <MobileEmulator></MobileEmulator>-->
             <IPhoneEmulator></IPhoneEmulator>
 <!--            <img src="../assets/model_m66.png">-->
         </div>
@@ -30,22 +44,37 @@
 </template>
 
 <script>
-    import MobileEmulator from "@/components/MobileEmulator";
+    // import MobileEmulator from "@/components/MobileEmulator";
     import IPhoneEmulator from "@/components/IPhoneEmulator";
 
     export default {
         name: "NavigateToAppSection",
 
         components: {
-            MobileEmulator,
+            // MobileEmulator,
             IPhoneEmulator
         }
     }
 </script>
 
 <style scoped>
-    #navigate-to-app p {
-        text-align: center;
+    table {
+        width: initial;
+        margin: 20px auto auto;
+    }
+
+    table, tr {
+        border-bottom: 1px solid;
+        border-top: 1px solid;
+        border-collapse: collapse;
+    }
+
+    td {
+        padding: 20px;
+    }
+
+    td a {
+        display: inline-block;
         margin-top: 20px;
     }
 
@@ -101,5 +130,15 @@
 
     .close:hover {
         color: #101010;
+    }
+
+    #google-play-img {
+        width: 140px;
+    }
+
+    @media only screen and (max-width: 640px) {
+        #pc-only-tr {
+            display: none;
+        }
     }
 </style>
