@@ -1,6 +1,6 @@
 <template id="app">
   <div id="main-div">
-    <Website id="website"></Website>
+    <router-view style="padding: 20px"></router-view>
   </div>
 </template>
 
