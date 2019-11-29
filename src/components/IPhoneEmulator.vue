@@ -106,8 +106,6 @@
          height: 6px;
          top: 2px;
          left: 2px;
-         top: 3px;
-         left: 3px;
          display: block;
          border-radius: 4px;
          box-shadow: inset 0 -2px 2px rgba(0, 0, 0, 0.5);

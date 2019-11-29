@@ -21,7 +21,7 @@
 
         <a href="#" class="overlay" id="smartphone-view"></a>
         <div class="popup">
-            <a class="close" title="Close" href="javascript:history.back()">X</a>
+            <a class="close" title="Close" href="javascript:window.location = '/'">X</a>
             <MobileEmulator v-if="false"></MobileEmulator>
             <IPhoneEmulator></IPhoneEmulator>
 <!--            <img src="../assets/model_m66.png">-->
