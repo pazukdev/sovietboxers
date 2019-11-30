@@ -1,6 +1,6 @@
 <template>
     <div class="backgrounded-area">
-        <p class="centred-topic">App versions</p>
+        <p class="centred-topic">{{$t('appVersions')}}</p>
         <ul id="example-1">
             <li v-for="appVersion in appVersions" :key="appVersion">
                 <AppVersion :version-publication-date="appVersion.versionPublicationDate"
