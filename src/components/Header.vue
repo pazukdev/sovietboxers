@@ -18,9 +18,9 @@
                     {{$t("appTitleDescription")}}
                 </p>
                 <p id="app-title-description-details">
-                    - part numbers<br>
-                    - dimensions<br>
-                    - replacers<br>
+                    {{"- " + $t("partNumbers")}}<br>
+                    {{"- " + $t("dimensions")}}<br>
+                    {{"- " + $t("replacers")}}<br>
                 </p>
             </div>
         </div>

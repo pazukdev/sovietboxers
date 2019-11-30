@@ -8,7 +8,21 @@ export const i18n = new VueI18n({
     fallbackLocale: "en",
     messages: {
         en: {
-            appTitleDescription: "Seals, bearings and other parts of soviet boxers",
+            appTitleDescription: "Seals, bearings and other parts of Soviet boxers",
+            partNumbers: "part numbers",
+            dimensions: "dimensions",
+            replacers: "replacers",
+            appMainDescription: "is an app where you can find information about " +
+                "seals, bearings and some other standard parts " +
+                "of different models of Soviet boxers " +
+                "and some other old motorcycles: " +
+                "catalogue part numbers, dimensions and alternative parts for replacement",
+            forAndroidDevices: "For Android OS devices",
+            forIOSDevices: "For IOS devices, laptop and PC",
+            forPC: "For PC",
+            googlePlayLinkTitle: "App on GooglePlay",
+            directLinkToApp: "Direct link to the app",
+            clickToOpenTheApp: "Click to open the app",
             language: "English",
             december: "December",
             v2_0Update1: "App backend was totally redesigned",
@@ -22,6 +36,20 @@ export const i18n = new VueI18n({
         },
         ru: {
             appTitleDescription: "Подшипники, сальники и другие детали советских оппозитов",
+            partNumbers: "парт номера",
+            dimensions: "размеры",
+            replacers: "заменители",
+            appMainDescription: "это приложение, в котором вы можете найти информацию о " +
+                "сальниках, подшипниках и некоторых других стандартных деталях " +
+                "различных моделей советских оппозитов " +
+                "и некоторых других старых мотоциклов: " +
+                "каталожные номера, размеры и современные изделия в качестве заменителей",
+            forIOSDevices: "Для девайсов на IOS, ноутбуков и десктопа",
+            forAndroidDevices: "Для девайсов на ОС Android",
+            forPC: "Для десктопа",
+            googlePlayLinkTitle: "Приложение на GooglePlay",
+            directLinkToApp: "Ссылка на приложение",
+            clickToOpenTheApp: "Кликните чтобы открыть приложение",
             language: "Русский язык",
             december: "Декабрь",
             v2_0Update1: "Бэкенд полностью переделан",

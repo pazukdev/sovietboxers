@@ -6,9 +6,8 @@
         <div class="backgrounded-area">
             <p id="app-main-description">
                 <span class="colored-text">Soviet Boxers' Seals & Bearings</span>
-                - is an app where you can find information about seals, bearings and some other standard parts of
-                different models of Soviet boxers and some other old motorcycles: catalogue part numbers, dimensions
-                and alternative parts for replacement
+                {{" - "}}
+                {{$t("appMainDescription")}}
             </p>
             <NavigateToAppSection></NavigateToAppSection>
         </div>

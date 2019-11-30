@@ -4,10 +4,10 @@
             <tbody>
             <tr v-if="false">
                 <td>
-                    For Android OS devices<br>
+                    {{$t("forAndroidDevices")}}<br>
                     <a id="google_link"
                        target="_blank"
-                       title="App on GooglePlay"
+                       :title="$t('googlePlayLinkTitle')"
                        href='https://play.google.com/store/apps/details?id=by.pazukdev.sovietboxersbearings&hl=en&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
                         <img id="google-play-img" alt='Get it on Google Play'
                              src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/>
@@ -16,16 +16,18 @@
             </tr>
             <tr>
                 <td>
-                    For IOS devices, laptop and PC<br>
-                    <a target="_blank" href="https://vue-page-test-pazukdev.herokuapp.com">Direct link to the app</a>
+                    {{$t("forIOSDevices")}}<br>
+                    <a target="_blank" href="https://vue-page-test-pazukdev.herokuapp.com">
+                        {{$t("directLinkToApp")}}
+                    </a>
                 </td>
             </tr>
             <tr id="pc-only-tr">
                 <td>
-                    For PC<br>
+                    {{$t("forPC")}}<br>
                     <a href="#smartphone-view"
                        class="button2"
-                       title="Click to open the app">
+                       :title="$t('clickToOpenTheApp')">
                         <img style="height: 200px" alt="smartphone button" src='../assets/iphone-device.png'/>
                     </a>
                 </td>
