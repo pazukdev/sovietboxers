@@ -25,7 +25,7 @@
 
 <style scoped>
     .backgrounded-area {
-        background: #101010;
+        background: #050505;
         padding: initial;
         text-align: center;
     }
