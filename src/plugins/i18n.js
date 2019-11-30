@@ -8,6 +8,7 @@ export const i18n = new VueI18n({
     fallbackLocale: "en",
     messages: {
         en: {
+            appTitleDescription: "Seals, bearings and other parts of soviet boxers",
             language: "English",
             december: "December",
             v2_0Update1: "App backend was totally redesigned",
@@ -20,6 +21,7 @@ export const i18n = new VueI18n({
 
         },
         ru: {
+            appTitleDescription: "Подшипники, сальники и другие детали советских оппозитов",
             language: "Русский язык",
             december: "Декабрь",
             v2_0Update1: "Бэкенд полностью переделан",

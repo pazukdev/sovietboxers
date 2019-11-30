@@ -1,34 +1,25 @@
 <template id="app">
   <div id="main-div">
-    <router-view style="padding: 20px"></router-view>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-  import Website from "@/components/Website";
-
   export default {
-  name: 'app',
-
-  components: {
-    Website
-  }
+  name: 'app'
 }
 </script>
 
 <style>
   * {
-    margin: 0;
+    margin: auto;
     color: #909090;
   }
 
-  #app {
+  #main-div {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  }
-
-  #main-div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,7 +36,7 @@
     text-align: center;
   }
 
-  table, button, select, input {
+  table, button input {
     width: 100%;
   }
 
@@ -53,7 +44,7 @@
     height: 100%;
   }
 
-  hr, button, select, input {
+  hr, button, input {
     background: #808080;
   }
 
@@ -66,7 +57,7 @@
     border: none;
   }
 
-  select, input {
+  input {
     height: 52px;
   }
 
@@ -74,6 +65,15 @@
     min-height: 52px;
     max-height: 92px;
     color: #050505;
+  }
+
+  select {
+    background: initial;
+    font-size: medium;
+  }
+
+  option {
+    background: #212121;
   }
 
   img {

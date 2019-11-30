@@ -1,14 +1,21 @@
 <template>
     <div>
         <div class="backgrounded-area">
-            v 2.0
+            <table>
+                <tbody>
+                <tr>
+                    <td style="text-align: left">v 2.0</td>
+                    <td style="text-align: right"><LanguageSelect id="language-select"></LanguageSelect></td>
+                </tr>
+                </tbody>
+            </table>
         </div>
 
         <div class="backgrounded-area" id="header-main-div">
             <img src="../assets/app_logo.png" alt="app logo"/>
             <div>
                 <p id="app-title-description">
-                    Seals, bearings and some other parts of soviet boxers
+                    {{$t("appTitleDescription")}}
                 </p>
                 <p id="app-title-description-details">
                     - part numbers<br>
@@ -21,8 +28,14 @@
 </template>
 
 <script>
+    import LanguageSelect from "@/components/LanguageSelect";
+
     export default {
-        name: "Header"
+        name: "Header",
+
+        components: {
+            LanguageSelect
+        }
     }
 </script>
 
@@ -52,6 +65,10 @@
     @media only screen and (max-width: 640px) {
         #header-main-div {
             text-align: center;
+        }
+
+        #language-select {
+            display: inline-block;
         }
 
         img {
