@@ -1,8 +1,8 @@
 <template>
     <div class="backgrounded-area">
         <p class="centred-topic">{{$t('appVersions')}}</p>
-        <ul id="example-1">
-            <li v-for="appVersion in appVersions" :key="appVersion">
+        <ul>
+            <li v-for="appVersion in getAppVersions()" :key="appVersion">
                 <AppVersion :version-publication-date="appVersion.versionPublicationDate"
                             :version="appVersion.version"
                             :updates="appVersion.updates"></AppVersion>
@@ -21,9 +21,13 @@
             AppVersion
         },
 
-        data() {
-            return {
-                appVersions: [
+        watch: {
+            '$route': 'getAppVersions'
+        },
+
+        methods: {
+            getAppVersions() {
+                return  [
                     {
                         versionPublicationDate: this.$t('december') + ' 2019',
                         version: "2.0",

@@ -2,7 +2,7 @@
     <div class="app-version-div">
         <p>{{versionPublicationDate}}</p>
         <p class="colored-text">{{version}}</p>
-        <ul id="example-1">
+        <ul>
             <li v-for="update in updates" :key="update">
                 {{update}}
             </li>
