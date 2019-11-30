@@ -1,11 +1,13 @@
 <template>
     <div>
-        <div class="backgrounded-area">
+        <div class="backgrounded-area" id="language-panel">
             <table>
                 <tbody>
                 <tr>
-                    <td style="text-align: left">v 2.0</td>
-                    <td style="text-align: right"><LanguageSelect id="language-select"></LanguageSelect></td>
+                    <td style="text-align: left">2.0</td>
+                    <td style="text-align: right">
+                        <LanguageSelect id="language-select"></LanguageSelect>
+                    </td>
                 </tr>
                 </tbody>
             </table>
@@ -17,11 +19,11 @@
                 <p id="app-title-description">
                     {{$t("appTitleDescription")}}
                 </p>
-                <p id="app-title-description-details">
-                    {{"- " + $t("partNumbers")}}<br>
-                    {{"- " + $t("dimensions")}}<br>
-                    {{"- " + $t("replacers")}}<br>
-                </p>
+                <ul id="app-title-description-details">
+                    <li>{{$t("partNumbers")}}</li>
+                    <li>{{$t("dimensions")}}</li>
+                    <li>{{$t("replacers")}}</li>
+                </ul>
             </div>
         </div>
     </div>
@@ -40,8 +42,16 @@
 </script>
 
 <style scoped>
+    #language-panel {
+        background: #617D89;
+    }
+
     #header-main-div {
         overflow: auto;
+    }
+
+    td {
+        color: #101010;
     }
 
     img {
@@ -83,7 +93,7 @@
             font-size: initial;
             text-align: left;
             padding-top: 6px;
-            margin-left: 60%;
+            margin-left: 50%;
         }
     }
 </style>

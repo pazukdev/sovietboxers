@@ -63,5 +63,12 @@
 </script>
 
 <style scoped>
+    select {
+        color: #101010;
+    }
 
+    option {
+        background: #617D89;
+        color: #101010;
+    }
 </style>
