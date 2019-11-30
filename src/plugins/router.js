@@ -1,6 +1,6 @@
 import VueRouter from 'vue-router';
 import Vue from "vue";
-import Website from "@/components/Website";
+import Home from "@/components/Home";
 
 Vue.use(VueRouter);
 
@@ -10,7 +10,7 @@ const router = new VueRouter({
         // possible not valid urls
         { path: '/', redirect: { path: '/en' }},
         // urls to components binding
-        { path: '/:lang', name: 'home', component: Website }
+        { path: '/:lang', name: 'home', component: Home }
     ]
 });
 

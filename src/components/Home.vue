@@ -12,7 +12,7 @@
             <NavigateToAppSection></NavigateToAppSection>
         </div>
         <AppVersions></AppVersions>
-        <WebsiteFooter></WebsiteFooter>
+        <Footer></Footer>
     </div>
 </template>
 
@@ -20,18 +20,18 @@
     import Header from "@/components/Header";
     import MotorcycleGallery from "@/components/MotorcycleGallery";
     import NavigateToAppSection from "@/components/NavigateToAppSection";
-    import WebsiteFooter from "@/components/WebsiteFooter";
+    import Footer from "@/components/Footer";
     import AppVersions from "@/components/AppVersions";
 
     export default {
-        name: "Website",
+        name: "Home",
 
         components: {
             AppVersions,
             Header,
             MotorcycleGallery,
             NavigateToAppSection,
-            WebsiteFooter
+            Footer
         }
     }
 </script>
