@@ -31,7 +31,11 @@ export const i18n = new VueI18n({
             v1_01Fix1: "Fixed: error on open of MT-10-36 engine, M72 & M72M models last production year " +
                 "and some other bugs",
             v1_01Fix2: "Scaling improved",
-            v1_0: "App published on Google Play"
+            v1_0: "App published on Google Play",
+            kmz: "KMZ",
+            imz: "IMZ",
+            dnepr: "Dnepr",
+            ural: "Ural"
 
         },
         ru: {
@@ -58,7 +62,11 @@ export const i18n = new VueI18n({
             v1_01Fix1: "Исправлено: ошибка при открытии двигателя MT-10-36, годы окончания производства М72 и М72М " +
                 "и некоторые другие баги",
             v1_01Fix2: "Улучшено масштабирование",
-            v1_0: "Приложение опубликовано на Google Play"
+            v1_0: "Приложение опубликовано на Google Play",
+            kmz: " КМЗ",
+            imz: "ИМЗ",
+            dnepr: "Днепр",
+            ural: "Урал"
 
         }
     }
