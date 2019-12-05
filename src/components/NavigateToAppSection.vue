@@ -64,7 +64,7 @@
                 if (this.getHostName() === "localhost") {
                     location = '/';
                 } else {
-                    location = "/bearings-info";
+                    location = "/sovietboxers";
                 }
                 window.location = location;
             },
