@@ -69,7 +69,7 @@
         font-size: x-large;
         text-align: left;
         padding-top: 16px;
-        margin-left: 74%;
+        margin-left: 60%;
     }
 
     @media only screen and (max-width: 640px) {
