@@ -1,6 +1,5 @@
 <template>
     <div id="navigate-to-app">
-        {{getHostName()}}
         <table>
             <tbody>
             <tr v-if="false">
@@ -61,10 +60,6 @@
         methods: {
             closeSmartphoneModal() {
                 this.$router.push({ name: `home` });
-            },
-
-            getHostName() {
-                return window.location.hostname;
             }
         }
     }
