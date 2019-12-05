@@ -1,5 +1,6 @@
 <template>
     <div id="navigate-to-app">
+        {{getHostName()}}
         <table>
             <tbody>
             <tr v-if="false">
@@ -17,7 +18,7 @@
             <tr>
                 <td>
                     {{$t("forIOSDevices")}}<br>
-                    <a target="_blank" href="https://vue-page-test-pazukdev.herokuapp.com">
+                    <a target="_blank" href="https://pazukdev.github.io/bearings-info">
                         {{$t("directLinkToApp")}}
                     </a>
                 </td>
@@ -37,7 +38,7 @@
 
         <a href="#" class="overlay" id="smartphone-view"></a>
         <div class="popup">
-            <a class="close" title="Close" href="javascript:window.location = '/'">X</a>
+            <a class="close" title="Close" href="#" @click="closeSmartphoneModal()">X</a>
 <!--            <MobileEmulator></MobileEmulator>-->
             <IPhoneEmulator></IPhoneEmulator>
 <!--            <img src="../assets/model_m66.png">-->
@@ -55,6 +56,22 @@
         components: {
             // MobileEmulator,
             IPhoneEmulator
+        },
+
+        methods: {
+            closeSmartphoneModal() {
+                let location = "/";
+                if (this.getHostName() === "localhost") {
+                    location = '/';
+                } else {
+                    location = "/bearings-info";
+                }
+                window.location = location;
+            },
+
+            getHostName() {
+                return window.location.hostname;
+            }
         }
     }
 </script>
