@@ -60,13 +60,7 @@
 
         methods: {
             closeSmartphoneModal() {
-                let location = "/";
-                if (this.getHostName() === "localhost") {
-                    location = '/';
-                } else {
-                    location = "/sovietboxers";
-                }
-                window.location = location;
+                this.$router.push({ name: `home` });
             },
 
             getHostName() {
