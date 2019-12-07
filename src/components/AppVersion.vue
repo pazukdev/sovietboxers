@@ -35,4 +35,16 @@
     li {
         margin: 20px;
     }
+
+    @media only screen and (max-width: 640px) {
+        .app-version-div {
+            margin: 20px 0;
+        }
+
+        li {
+            margin: 20px 0;
+        }
+
+    }
+
 </style>
