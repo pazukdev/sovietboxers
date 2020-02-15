@@ -29,7 +29,7 @@
             getAppVersions() {
                 return  [
                     {
-                        versionPublicationDate: this.$t('december') + ' 2019',
+                        versionPublicationDate: this.$t('february') + ' 2020',
                         version: "2.0",
                         updates: [this.$t("v2_0Update1"), this.$t("v2_0Update2"), this.$t("v2_0Update3")]
                     },

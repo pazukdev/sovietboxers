@@ -12,7 +12,7 @@
                    title="Soviet Boxers Seals & Bearings tech support community on vk.com">
                 <img src="../assets/logo_vk.png" alt="vk logo"/></a>
             </span>
-            <span>&#169; 2019 Soviet Boxers Seals & Bearings</span>
+            <span>&#169; 2017-2020 {{$t("appName")}}</span>
         </div>
     </div>
 </template>

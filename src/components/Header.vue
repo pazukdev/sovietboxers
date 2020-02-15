@@ -14,7 +14,7 @@
         </div>
 
         <div class="backgrounded-area" id="header-main-div">
-            <img src="../assets/app_logo.png" alt="app logo"/>
+            <img src="../assets/old-vehicles_280x280.png" alt="app logo"/>
             <div>
                 <p id="app-title-description">
                     {{$t("appTitleDescription")}}

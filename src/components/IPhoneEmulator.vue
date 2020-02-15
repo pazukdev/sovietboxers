@@ -7,7 +7,7 @@
                    target="iframe_a"
                    @click="hideStartAppLink()"
                    v-if="showStartAppLink"
-                   href="https://vue-page-test-pazukdev.herokuapp.com/">
+                   href="https://pazukdev.github.io/bearings-info">
                     Start the app!
                 </a>
                 <div class="abc"></div>

@@ -28,10 +28,6 @@
     background: black;
   }
 
-  @media only screen and (max-width: 640px) {
-
-  }
-
   table, button, select, input {
     text-align: center;
   }
