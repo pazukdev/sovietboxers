@@ -36,7 +36,11 @@ export const i18n = new VueI18n({
             imz: "IMZ",
             dnepr: "Dnepr",
             ural: "Ural",
-            youCanHelpTheProject: "You can help the project"
+            youCanHelpTheProject: "You can help the project",
+            zoomOutMessage: "If the phone is larger than the screen - zoom out browser view",
+            zoomInMessage: "If the phone is too small - zoom in browser view",
+            startApp: "Start the app",
+            close: "Close"
 
         },
         ru: {
@@ -69,7 +73,11 @@ export const i18n = new VueI18n({
             imz: "ИМЗ",
             dnepr: "Днепр",
             ural: "Урал",
-            youCanHelpTheProject: "Вы можете помочь проекту"
+            youCanHelpTheProject: "Вы можете помочь проекту",
+            zoomOutMessage: "Если телефон больше экрана - отдалите вид в браузере",
+            zoomInMessage: "Если телефон слишком маленький - приблизьте вид в браузере",
+            startApp: "Старт приложения",
+            close: "Закрыть"
 
         }
     }

@@ -37,7 +37,7 @@
 
         <a href="#" class="overlay" id="smartphone-view"></a>
         <div class="popup">
-            <a class="close" title="Close" href="#" @click="closeSmartphoneModal()">X</a>
+            <a class="close" :title="$t('close')" href="#" @click="closeSmartphoneModal()">X</a>
 <!--            <MobileEmulator></MobileEmulator>-->
             <IPhoneEmulator></IPhoneEmulator>
 <!--            <img src="../assets/model_m66.png">-->

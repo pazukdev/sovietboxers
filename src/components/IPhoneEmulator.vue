@@ -2,14 +2,21 @@
     <div class="backgrounded-area">
         <div class="iphone-x">
             <div class="content">
-                <a class="start-app"
-                   title="Start the app"
-                   target="iframe_a"
-                   @click="hideStartAppLink()"
-                   v-if="showStartAppLink"
-                   href="https://pazukdev.github.io/bearings-info">
-                    Start the app!
-                </a>
+                <div v-if="showStartAppLink" style="text-align: center">
+                    <ul id="mobile-view-messages">
+                        <li>{{$t("zoomOutMessage")}}</li>
+                        <li>{{$t("zoomInMessage")}}</li>
+                    </ul>
+                    <br>
+                    <br>
+                    <a class="start-app"
+                       title="Start the app"
+                       target="iframe_a"
+                       @click="hideStartAppLink()"
+                       href="https://pazukdev.github.io/bearings-info">
+                        {{$t("startApp")}}
+                    </a>
+                </div>
                 <div class="abc"></div>
                 <i>Speaker</i>
                 <b>Camera</b>
@@ -121,5 +128,14 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    ul {
+        margin: 10px;
+        text-align: left;
+    }
+
+    li {
+        margin-bottom: 10px;
     }
 </style>
