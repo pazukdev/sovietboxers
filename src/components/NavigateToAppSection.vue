@@ -28,7 +28,7 @@
                     <a href="#smartphone-view"
                        class="button2"
                        :title="$t('clickToOpenTheApp')">
-                        <img style="height: 200px" alt="smartphone button" src='../assets/iphone-device.png'/>
+                        <img style="height: 200px" alt="smartphone button" src='../assets/device-iphone.png'/>
                     </a>
                 </td>
             </tr>
