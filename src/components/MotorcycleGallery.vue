@@ -18,7 +18,7 @@
         <img :title="'МВ-750М' +', ' + $t('kmz') + ' ' +'1973-1976'"
              alt="kmz mv-750m MB-750M sidecar boxer motorcycle"
              src='../assets/model_mv750m_small.png'/>
-        <img :title="$t('dnepr') + 'MT-10' + ', ' + $t('kmz') + ' ' +'1974-1976'"
+        <img :title="$t('dnepr') + ' MT-10' + ', ' + $t('kmz') + ' ' +'1974-1976'"
              alt="kmz dnepr mt-10 sidecar boxer motorcycle"
              src='../assets/model_mt10_small.png'/>
         <img :title="$t('dnepr') + '-11' + ', ' + $t('kmz') + ' ' +'1985-2008'"

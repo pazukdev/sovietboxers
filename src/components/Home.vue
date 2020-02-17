@@ -51,6 +51,10 @@
         padding: 20px;
     }
 
+    .default-padding {
+        padding: 20px;
+    }
+
     .colored-text {
         color: #617d89;
     }

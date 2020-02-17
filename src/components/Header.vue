@@ -4,9 +4,15 @@
             <table>
                 <tbody>
                 <tr>
-                    <td style="text-align: left">2.0</td>
-                    <td style="text-align: right">
+                    <td style="text-align: left" class="default-padding">2.0</td>
+                    <td style="text-align: right" class="default-padding">
                         <LanguageSelect id="language-select"></LanguageSelect>
+                    </td>
+                    <td style="width: 200px; border-left: solid #050505 1px">
+                        <a href="https://info.flagcounter.com/OWa2">
+                            <img alt="Flag Counter"
+                                 src="https://s11.flagcounter.com/count/OWa2/bg_617D89/txt_050505/border_617D89/columns_2/maxflags_10/viewers_0/labels_1/pageviews_0/flags_0/percent_0/">
+                        </a>
                     </td>
                 </tr>
                 </tbody>
@@ -44,6 +50,7 @@
 <style scoped>
     #language-panel {
         background: #617D89;
+        padding: initial;
     }
 
     #header-main-div {
