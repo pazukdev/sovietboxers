@@ -40,7 +40,9 @@ export const i18n = new VueI18n({
             zoomOutMessage: "If the phone is larger than the screen - zoom out browser view",
             zoomInMessage: "If the phone is too small - zoom in browser view",
             startApp: "Start the app",
-            close: "Close"
+            close: "Close",
+            payPalDonationBox: "#1 Pay Pal donation box",
+            yandexDonationBox: "#2 Yandex donation box"
 
         },
         ru: {
@@ -77,7 +79,9 @@ export const i18n = new VueI18n({
             zoomOutMessage: "Если телефон больше экрана - отдалите вид в браузере",
             zoomInMessage: "Если телефон слишком маленький - приблизьте вид в браузере",
             startApp: "Старт приложения",
-            close: "Закрыть"
+            close: "Закрыть",
+            payPalDonationBox: "#1 Pay Pal ящик для доната",
+            yandexDonationBox: "#2 Яндекс ящик для доната"
 
         }
     }

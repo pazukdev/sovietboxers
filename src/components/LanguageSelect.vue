@@ -1,7 +1,5 @@
 <template>
     <div>
-        <div>
-        </div>
         <label>
             <select v-model="newLanguage"
                     @change="selectLanguage()">

@@ -17,7 +17,7 @@
             <tr>
                 <td>
                     {{$t("forIOSDevices")}}<br>
-                    <a target="_blank" href="https://pazukdev.github.io/bearings-info">
+                    <a target="_blank" href="https://www.old-vehicles.com">
                         {{$t("directLinkToApp")}}
                     </a>
                 </td>

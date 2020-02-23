@@ -78,6 +78,7 @@
   }
 
   summary {
-    text-align: left;
+    text-align: center;
+    cursor: pointer;
   }
 </style>

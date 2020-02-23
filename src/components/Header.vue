@@ -6,11 +6,11 @@
                 <tr>
                     <td style="text-align: left" class="default-padding">2.0</td>
                     <td style="text-align: right" class="default-padding">
-                        <LanguageSelect id="language-select"></LanguageSelect>
+                        <LanguageSelect id="language-select"/>
                     </td>
                     <td style="width: 200px; border-left: solid #050505 1px">
                         <a href="https://info.flagcounter.com/OWa2">
-                            <img alt="Flag Counter"
+                            <img id="flag-counter" alt="Flag Counter" border="0"
                                  src="https://s11.flagcounter.com/count/OWa2/bg_617D89/txt_050505/border_617D89/columns_2/maxflags_10/viewers_0/labels_1/pageviews_0/flags_0/percent_0/">
                         </a>
                     </td>
@@ -20,7 +20,7 @@
         </div>
 
         <div class="backgrounded-area" id="header-main-div">
-            <img src="../assets/old-vehicles_280x280.png" alt="app logo"/>
+            <img id="app-logo" src="../assets/old-vehicles_280x280.png" alt="app logo"/>
             <div>
                 <p id="app-title-description">
                     {{$t("appTitleDescription")}}
@@ -61,7 +61,7 @@
         color: #101010;
     }
 
-    img {
+    #app-logo {
         float: left;
         height: 200px;
     }
@@ -85,10 +85,10 @@
         }
 
         #language-select {
-            display: inline-block;
+            /*display: inline-block;*/
         }
 
-        img {
+        #app-logo {
             float: initial;
         }
 
@@ -101,6 +101,11 @@
             text-align: left;
             padding-top: 6px;
             margin-left: 50%;
+        }
+
+        #flag-counter {
+            max-height: initial;
+            max-width: initial;
         }
     }
 </style>

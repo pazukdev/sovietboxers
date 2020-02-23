@@ -1,13 +1,15 @@
 <template>
     <div class="backgrounded-area">
-        <p class="centred-topic">{{$t('appVersions')}}</p>
-        <ul>
-            <li v-for="appVersion in getAppVersions()" :key="appVersion">
-                <AppVersion :version-publication-date="appVersion.versionPublicationDate"
-                            :version="appVersion.version"
-                            :updates="appVersion.updates"></AppVersion>
-            </li>
-        </ul>
+        <details>
+            <summary>{{$t('appVersions')}}</summary>
+            <ul>
+                <li v-for="appVersion in getAppVersions()" :key="appVersion">
+                    <AppVersion :version-publication-date="appVersion.versionPublicationDate"
+                                :version="appVersion.version"
+                                :updates="appVersion.updates"/>
+                </li>
+            </ul>
+        </details>
     </div>
 </template>
 

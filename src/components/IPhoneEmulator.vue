@@ -13,7 +13,7 @@
                        title="Start the app"
                        target="iframe_a"
                        @click="hideStartAppLink()"
-                       href="https://pazukdev.github.io/bearings-info">
+                       href="https://www.old-vehicles.com">
                         {{$t("startApp")}}
                     </a>
                 </div>

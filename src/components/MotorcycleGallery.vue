@@ -34,6 +34,10 @@
 </script>
 
 <style scoped>
+    #motorcycle-gallery {
+        text-align: center;
+    }
+
     @media only screen and (max-width: 640px) {
       #motorcycle-gallery {
           display: none;
