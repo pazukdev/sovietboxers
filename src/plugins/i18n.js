@@ -42,18 +42,19 @@ export const i18n = new VueI18n({
             startApp: "Start the app",
             close: "Close",
             payPalDonationBox: "#1 Pay Pal donation box",
-            yandexDonationBox: "#2 Yandex donation box"
+            yandexDonationBox: "#2 Yandex donation box",
+            fbGroupTitle: "Facebook group",
+            vkCommunityTitle: "vk community"
 
         },
         ru: {
-            appName: "Old Vehicles: сальники и подшипники",
-            appTitleDescription: "Подшипники, сальники и другие детали советских оппозитов и других старых транспортных средств",
+            appName: "Старая техника: сальники и подшипники",
+            appTitleDescription: "Подшипники, сальники и другие детали советских оппозитов и другой старой техники",
             partNumbers: "парт номера",
             dimensions: "размеры",
             replacers: "заменители",
             appMainDescription: "это приложение, в котором вы можете найти информацию о " +
-                "сальниках, подшипниках и других деталях советских оппозитов и некоторых других старых или редких " +
-                "транспортных средств",
+                "сальниках, подшипниках и других деталях советских оппозитов и другой старой или редкой техники",
             forIOSDevices: "Для девайсов на IOS, ноутбуков и десктопа",
             forAndroidDevices: "Для девайсов на ОС Android",
             forPC: "Для десктопа",
@@ -63,7 +64,7 @@ export const i18n = new VueI18n({
             appVersions: "Версии приложения",
             december: "Декабрь",
             february: "Февраль",
-            v2_0Update0: "Приложение периименовано в: Old Vehicles: сальники и подшипники",
+            v2_0Update0: "Приложение периименовано в: Старая техника: сальники и подшипники",
             v2_0Update1: "Приложение полностью переделано",
             v2_0Update2: "Всю информацию теперь можно редактировать",
             v2_0Update3: "Можно добавлять свои мотоциклы, автомобили, агрегаты и детали",
@@ -81,7 +82,9 @@ export const i18n = new VueI18n({
             startApp: "Старт приложения",
             close: "Закрыть",
             payPalDonationBox: "#1 Pay Pal ящик для доната",
-            yandexDonationBox: "#2 Яндекс ящик для доната"
+            yandexDonationBox: "#2 Яндекс ящик для доната",
+            fbGroupTitle: "Группа в Facebook",
+            vkCommunityTitle: "Сообщество в vk"
 
         }
     }
