@@ -13,6 +13,7 @@ export const i18n = new VueI18n({
             partNumbers: "part numbers",
             dimensions: "dimensions",
             replacers: "replacers",
+            language: "Language",
             appMainDescription: "is an app where you can find information about " +
                 "seals, bearings and other parts of soviet boxers and some other old or rare vehicles",
             forAndroidDevices: "For Android OS devices",
@@ -37,6 +38,7 @@ export const i18n = new VueI18n({
             dnepr: "Dnepr",
             ural: "Ural",
             youCanHelpTheProject: "You can help the project",
+            projectTakesTime: "The project takes a lot of time. I will be glad of any help",
             zoomOutMessage: "If the phone is larger than the screen - zoom out browser view",
             zoomInMessage: "If the phone is too small - zoom in browser view",
             startApp: "Start the app",
@@ -45,7 +47,6 @@ export const i18n = new VueI18n({
             yandexDonationBox: "#2 Yandex donation box",
             fbGroupTitle: "Facebook group",
             vkCommunityTitle: "vk community"
-
         },
         ru: {
             appName: "Старая техника: сальники и подшипники",
@@ -53,6 +54,7 @@ export const i18n = new VueI18n({
             partNumbers: "парт номера",
             dimensions: "размеры",
             replacers: "заменители",
+            language: "Язык",
             appMainDescription: "это приложение, в котором вы можете найти информацию о " +
                 "сальниках, подшипниках и других деталях советских оппозитов и другой старой или редкой техники",
             forIOSDevices: "Для девайсов на IOS, ноутбуков и десктопа",
@@ -77,6 +79,7 @@ export const i18n = new VueI18n({
             dnepr: "Днепр",
             ural: "Урал",
             youCanHelpTheProject: "Вы можете помочь проекту",
+            projectTakesTime: "Проект требует много времени. Буду рад любой помощи",
             zoomOutMessage: "Если телефон больше экрана - отдалите вид в браузере",
             zoomInMessage: "Если телефон слишком маленький - приблизьте вид в браузере",
             startApp: "Старт приложения",
@@ -85,7 +88,6 @@ export const i18n = new VueI18n({
             yandexDonationBox: "#2 Яндекс ящик для доната",
             fbGroupTitle: "Группа в Facebook",
             vkCommunityTitle: "Сообщество в vk"
-
         }
     }
 });

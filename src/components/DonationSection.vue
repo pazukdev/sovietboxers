@@ -2,6 +2,8 @@
     <div class="backgrounded-area" style="text-align: center">
         <p><b>{{$t("youCanHelpTheProject")}}</b></p>
         <br>
+        <p>{{$t("projectTakesTime")}}</p>
+        <br>
         <details open>
             <summary>{{$t("payPalDonationBox")}}</summary>
             <br>

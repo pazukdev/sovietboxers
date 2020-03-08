@@ -1,6 +1,7 @@
 <template>
-    <div>
+    <div style="white-space: nowrap">
         <label>
+            {{$t("language")}}
             <select v-model="newLanguage"
                     @change="selectLanguage()">
                 <option v-for="lang in ['en', 'ru']" :key="lang">
@@ -30,31 +31,25 @@
         },
 
         watch: {
-            '$route': 'setLocale'
+            '$route': 'onUrlChange'
         },
 
         created() {
-            this.setLocale();
+            this.onUrlChange();
         },
 
         methods: {
-            setLocale() {
-                this.newLanguage = this.appLanguage;
-                if (this.$route.params.lang !== this.newLanguage) {
-                    this.changeLanguageInUrl(this.newLanguage);
+            onUrlChange() {
+                let urlLang = this.$route.params.lang;
+                if (urlLang !== this.newLanguage) {
+                    this.newLanguage = urlLang;
+                    this.$i18n.locale = this.newLanguage;
                 }
-                this.$i18n.locale = this.newLanguage;
             },
 
             selectLanguage() {
-                this.$store.dispatch("setAppLanguage", this.newLanguage.toLowerCase());
-                this.changeLanguageInUrl(this.newLanguage.toLowerCase());
-            },
-
-            changeLanguageInUrl(language) {
-                this.$router.replace({
-                    path: this.$router.currentRoute.path.replace(/\/[^/]*$/, "/" + language)
-                });
+                this.$router.push({name: "home", params: {lang: this.newLanguage}});
+                this.$i18n.locale = this.newLanguage;
             }
         }
     }
