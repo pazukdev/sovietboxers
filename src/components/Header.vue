@@ -5,10 +5,10 @@
                 <tbody>
                 <tr>
                     <td id="flag-counter-wide"
-                        style="text-align: left; border-right: solid #050505 1px; width: 370px">
+                        style="text-align: left">
                         <a href="https://info.flagcounter.com/OWa2">
                             <img class="flag-counter" alt="Flag Counter"
-                                 src="https://s11.flagcounter.com/count/OWa2/bg_617D89/txt_050505/border_617D89/columns_4/maxflags_12/viewers_0/labels_1/pageviews_0/flags_0/percent_0/">
+                                 src="https://s11.flagcounter.com/count/OWa2/bg_617D89/txt_050505/border_617D89/columns_3/maxflags_9/viewers_0/labels_1/pageviews_0/flags_0/percent_0/">
                         </a>
                     </td>
                     <td id="flag-counter-high"

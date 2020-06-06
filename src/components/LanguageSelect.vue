@@ -4,8 +4,8 @@
             {{$t("language")}}
             <select v-model="newLanguage"
                     @change="selectLanguage()">
-                <option v-for="lang in ['en', 'ru']" :key="lang">
-                    {{lang}}
+                <option v-for="lang in ['en', 'ru']" :key="lang" :value="lang">
+                    {{lang.toUpperCase()}}
                 </option>
             </select>
         </label>

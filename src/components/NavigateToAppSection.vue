@@ -2,22 +2,22 @@
     <div id="navigate-to-app">
         <table>
             <tbody>
-            <tr v-if="false">
+            <tr>
                 <td>
                     {{$t("forAndroidDevices")}}<br>
-                    <a id="google_link"
+                    <a id="google-play-link"
                        target="_blank"
                        :title="$t('googlePlayLinkTitle')"
-                       href='https://play.google.com/store/apps/details?id=by.pazukdev.sovietboxersbearings&hl=en&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
-                        <img id="google-play-img" alt='Get it on Google Play'
-                             src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/>
+                       :href="getGooglePlayLink($route.params.lang)">
+                        <img style="width: 260px" id="google-play-img" alt='Get it on Google Play'
+                             :src="getGooglePlayImg($route.params.lang)"/>
                     </a>
                 </td>
             </tr>
             <tr>
                 <td>
                     {{$t("forIOSDevices")}}<br>
-                    <a target="_blank" href="https://www.old-vehicles.com">
+                    <a target="_blank" href="https://www.old-vehicles.com" :title="$t('clickToOpenTheApp')">
                         {{$t("directLinkToApp")}}
                     </a>
                 </td>
@@ -60,6 +60,16 @@
         methods: {
             closeSmartphoneModal() {
                 this.$router.push({ name: `home` });
+            },
+
+            getGooglePlayLink(lang) {
+                lang = lang === "ru" ? "&hl=ru" : "";
+                return "https://play.google.com/store/apps/details?id=com.pazukdev.oldvehicles" + lang;
+            },
+
+            getGooglePlayImg(lang) {
+                lang = lang === "ru" ? "ru" : "en";
+                return "https://play.google.com/intl/en_us/badges/images/generic/" + lang + "_badge_web_generic.png";
             }
         }
     }

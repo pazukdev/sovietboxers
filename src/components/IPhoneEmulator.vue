@@ -55,7 +55,7 @@
     .iphone-x {
         position: relative;
         margin-top: 3vh;
-        width: 400px;
+        width: 410px;
         height: 840px;
         border-radius: 40px;
         box-shadow: 0 0 0 11px #101010, 0 0 0 13px #212121, 0 0 0 20px #101010;

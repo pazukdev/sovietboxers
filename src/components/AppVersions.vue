@@ -1,15 +1,12 @@
 <template>
-    <div class="backgrounded-area">
-        <details>
-            <summary>{{$t('appVersions')}}</summary>
-            <ul>
-                <li v-for="appVersion in getAppVersions()" :key="appVersion">
-                    <AppVersion :version-publication-date="appVersion.versionPublicationDate"
-                                :version="appVersion.version"
-                                :updates="appVersion.updates"/>
-                </li>
-            </ul>
-        </details>
+    <div>
+        <ul>
+            <li v-for="description in descriptions" :key="description">
+                <AppVersion :version-publication-date="description.versionPublicationDate"
+                            :version="description.version"
+                            :updates="description.updates"/>
+            </li>
+        </ul>
     </div>
 </template>
 
@@ -27,31 +24,8 @@
             '$route': 'getAppVersions'
         },
 
-        methods: {
-            getAppVersions() {
-                return  [
-                    {
-                        versionPublicationDate: this.$t('february') + ' 2020',
-                        version: "2.0",
-                        updates: [
-                            this.$t("v2_0Update0"),
-                            this.$t("v2_0Update1"),
-                            this.$t("v2_0Update2"),
-                            this.$t("v2_0Update3")
-                        ]
-                    },
-                    {
-                        versionPublicationDate: this.$t('december') + ' 12 2017',
-                        version: "1.01",
-                        updates: [this.$t("v1_01Fix1"), this.$t("v1_01Fix2")]
-                    },
-                    {
-                        versionPublicationDate: this.$t('december') + ' 7 2017',
-                        version: "1.0",
-                        updates: [this.$t("v1_0")]
-                    }
-                ]
-            }
+        props: {
+            descriptions:Array
         }
     }
 </script>

@@ -3,7 +3,6 @@
         <Header/>
         <MotorcycleGallery/>
         <MainInfoSection/>
-        <AppVersions/>
         <DonationSection/>
         <Footer/>
     </div>
@@ -13,7 +12,6 @@
     import Header from "@/components/Header";
     import MotorcycleGallery from "@/components/MotorcycleGallery";
     import Footer from "@/components/Footer";
-    import AppVersions from "@/components/AppVersions";
     import DonationSection from "@/components/DonationSection";
     import MainInfoSection from "@/components/MainInfoSection";
 
@@ -23,7 +21,6 @@
         components: {
             MainInfoSection,
             DonationSection,
-            AppVersions,
             Header,
             MotorcycleGallery,
             Footer
