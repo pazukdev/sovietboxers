@@ -5,13 +5,7 @@
             <tr>
                 <td>
                     {{$t("forAndroidDevices")}}<br>
-                    <a id="google-play-link"
-                       target="_blank"
-                       :title="$t('googlePlayLinkTitle')"
-                       :href="getGooglePlayLink($route.params.lang)">
-                        <img style="width: 260px" id="google-play-img" alt='Get it on Google Play'
-                             :src="getGooglePlayImg($route.params.lang)"/>
-                    </a>
+                    <GooglePlayLink/>
                 </td>
             </tr>
             <tr>
@@ -48,11 +42,13 @@
 <script>
     // import MobileEmulator from "@/components/MobileEmulator";
     import IPhoneEmulator from "@/components/IPhoneEmulator";
+    import GooglePlayLink from "@/components/GooglePlayLink";
 
     export default {
         name: "NavigateToAppSection",
 
         components: {
+            GooglePlayLink,
             // MobileEmulator,
             IPhoneEmulator
         },
@@ -60,16 +56,6 @@
         methods: {
             closeSmartphoneModal() {
                 this.$router.push({ name: `home` });
-            },
-
-            getGooglePlayLink(lang) {
-                lang = lang === "ru" ? "&hl=ru" : "";
-                return "https://play.google.com/store/apps/details?id=com.pazukdev.oldvehicles" + lang;
-            },
-
-            getGooglePlayImg(lang) {
-                lang = lang === "ru" ? "ru" : "en";
-                return "https://play.google.com/intl/en_us/badges/images/generic/" + lang + "_badge_web_generic.png";
             }
         }
     }

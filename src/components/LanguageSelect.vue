@@ -1,11 +1,10 @@
 <template>
     <div style="white-space: nowrap">
         <label>
-            {{$t("language")}}
-            <select v-model="newLanguage"
+            <select v-model="newLanguage" style="font-weight: bold; color: #212121"
                     @change="selectLanguage()">
                 <option v-for="lang in ['en', 'ru']" :key="lang" :value="lang">
-                    {{lang.toUpperCase()}}
+                    {{getLangName(lang)}}
                 </option>
             </select>
         </label>
@@ -50,6 +49,13 @@
             selectLanguage() {
                 this.$router.push({name: "home", params: {lang: this.newLanguage}});
                 this.$i18n.locale = this.newLanguage;
+            },
+
+            getLangName(langCode) {
+                if (langCode === 'ru') {
+                    return 'Русский';
+                }
+                return "English";
             }
         }
     }

@@ -4,6 +4,10 @@
         <MotorcycleGallery/>
         <MainInfoSection/>
         <DonationSection/>
+        <div class="backgrounded-area" style="text-align: center">
+            <p>{{$t("dontForgetToRate")}}</p>
+            <GooglePlayLink/>
+        </div>
         <Footer/>
     </div>
 </template>
@@ -14,11 +18,13 @@
     import Footer from "@/components/Footer";
     import DonationSection from "@/components/DonationSection";
     import MainInfoSection from "@/components/MainInfoSection";
+    import GooglePlayLink from "@/components/GooglePlayLink";
 
     export default {
         name: "Home",
 
         components: {
+            GooglePlayLink,
             MainInfoSection,
             DonationSection,
             Header,

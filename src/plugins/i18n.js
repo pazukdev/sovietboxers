@@ -8,14 +8,15 @@ export const i18n = new VueI18n({
     fallbackLocale: "en",
     messages: {
         en: {
-            appName: "Old Vehicles: Seals & Bearings",
-            appTitleDescription: "Seals, bearings and other parts of soviet boxers and other old vehicles",
-            partNumbers: "part numbers",
-            dimensions: "dimensions",
-            replacers: "replacers",
+            details: "Details",
+            appName: "Old Vehicles. Soviet Boxers Parts Catalog",
+            appTitleDescription: "E-catalog for soviet sidecar motorcycles (KMZ, IMZ)",
+            bikesTitleList: "Ural, Dnepr, K-750, M-72, ect",
+            partsTitleList: "Seals, bearings, filters, ect",
+            featuresTitleList: "Catalogue numbers, analogs",
             language: "Language",
-            appMainDescription: "is an app where you can find information about " +
-                "seals, bearings and other parts of soviet boxers and some other old or rare vehicles",
+            appMainDescription: "is an e-catalog for soviet sidecar motorcycles (KMZ, IMZ)"
+                + " focused on standard parts and their modern high quality analogs.",
             forAndroidDevices: "For Android OS devices",
             forIOSDevices: "Phone, tablet",
             forPC: "PC, laptop",
@@ -58,7 +59,7 @@ export const i18n = new VueI18n({
             vkCommunityTitle: "vk community",
             bearingsAndSeals: "Bearings and seals",
             universalJoints: "Universal joints",
-            oilFilters: "Oil filters",
+            oilFilters: "Filters",
             sparkPlugs: "Spark plugs",
             pistonsAndPistonRings: "Pistons and piston rings",
             andSomeOtherParts: "And some other parts",
@@ -66,18 +67,22 @@ export const i18n = new VueI18n({
             whereToBuyInfo: "Where to buy",
             recommendedOilsAndFillingCapacities: "Recommended oils and filling capacities",
             manualsPartsCatalogsDrawingsSchemes: "Manuals, parts catalogs, drawings, schemes",
-            appIsFree: "The project is nonprofit and ads-free"
+            appIsFree: "The project is nonprofit and ads-free",
+            dontForgetToRate: "If the app is helpful to you, please, don't forget to rate the app"
+                + " and leave a review. It's very important for the project",
+            lastVersionDescription: "About v2.0"
 
         },
         ru: {
-            appName: "Старая техника: сальники и подшипники",
-            appTitleDescription: "Подшипники, сальники и другие детали советских оппозитов и другой старой техники",
-            partNumbers: "парт номера",
-            dimensions: "размеры",
-            replacers: "заменители",
+            details: "Развернуть описание",
+            appName: "Оппозиты ИМЗ и КМЗ. Справочник запчастей",
+            appTitleDescription: "Электронный каталог для тяжелых мотоциклов",
+            bikesTitleList: "Урал, Днепр, К-750, М-72 и др.",
+            partsTitleList: "Сальники, подшипники, фильтры и др.",
+            featuresTitleList: "Каталожные номера, аналоги",
             language: "Язык",
-            appMainDescription: "это приложение, в котором вы можете найти информацию о " +
-                "сальниках, подшипниках и других деталях советских оппозитов и другой старой или редкой техники",
+            appMainDescription: "это электронный каталог для советских тяжелых мотоциклов с коляской,"
+                + " ориентированный на стандартные запчасти и их современные качественные аналоги.",
             forIOSDevices: "Телефон, планшет",
             forAndroidDevices: "Для девайсов на ОС Android",
             forPC: "Компьютер, ноутбук",
@@ -120,7 +125,7 @@ export const i18n = new VueI18n({
             vkCommunityTitle: "Сообщество в vk",
             bearingsAndSeals: "Подшипники и сальники",
             universalJoints: "Крестовины",
-            oilFilters: "Масляные фильтры",
+            oilFilters: "Фильтры",
             sparkPlugs: "Свечи",
             pistonsAndPistonRings: "Поршни и кольца",
             andSomeOtherParts: "И некоторые другие запчасти",
@@ -128,7 +133,10 @@ export const i18n = new VueI18n({
             whereToBuyInfo: "Где купить",
             recommendedOilsAndFillingCapacities: "Рекомендуемые масла и заправочные объемы",
             manualsPartsCatalogsDrawingsSchemes: "Руководства, каталоги частей, чертежи, схемы",
-            appIsFree: "Этот проект некоммерческий и без рекламы"
+            appIsFree: "Этот проект некоммерческий и без рекламы",
+            dontForgetToRate: "Если это приложение оказалось полезным для вас,"
+                + " пожалуйста, не забудьте поставить ему оценку и написать отзыв.",
+            lastVersionDescription: "О версии 2.0"
         }
     }
 });

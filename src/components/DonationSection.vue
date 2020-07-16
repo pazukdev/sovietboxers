@@ -4,7 +4,7 @@
 <!--        <br>-->
         <p><b>{{$t("youCanHelpTheProject")}}</b></p>
         <br>
-        <details>
+        <details open>
             <summary><img src="../assets/beer.png" alt="beer icon" :title="$t('pour')"></summary>
             <br>
             <p>{{$t("projectTakesTime")}}</p>

@@ -1,23 +1,35 @@
 <template>
     <div class="backgrounded-area">
+        <p>{{"#ural #dnepr #m-72 #mv-750 #k-750 #k-650 #m-66 #cossack #neval"}}</p>
+        <br>
         <p id="app-main-description">
             <span class="colored-text">{{$t('appName')}}</span>
             {{" - "}}
             {{$t("appMainDescription")}}
         </p>
         <br>
-        <AppVersions :descriptions="getAppDescription()"/>
+        <div>
+            <details>
+                <summary style="text-align: left">{{$t("details")}}</summary>
+                <AppVersions :descriptions="getAppDescription()"/>
+            </details>
+            <br>
+            <details>
+                <summary style="text-align: left">{{$t("lastVersionDescription")}}</summary>
+                <AppVersions :descriptions="getAppV20Description()"/>
+                <br>
+                <br>
+                <details>
+                    <summary>{{$t('appVersions')}}</summary>
+                    <AppVersions :descriptions="getOldAppVersionsDescriptions()"/>
+                    <p style="text-align: center">{{"***"}}</p>
+                </details>
+            </details>
+        </div>
         <br>
         <NavigateToAppSection/>
         <br>
         <br>
-        <AppVersions :descriptions="getAppV20Description()"/>
-        <br>
-        <br>
-        <details>
-            <summary>{{$t('appVersions')}}</summary>
-            <AppVersions :descriptions="getOldAppVersionsDescriptions()"/>
-        </details>
     </div>
 </template>
 
@@ -104,5 +116,4 @@
 </script>
 
 <style scoped>
-
 </style>

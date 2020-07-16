@@ -27,15 +27,15 @@
         </div>
 
         <div class="backgrounded-area" id="header-main-div">
-            <img id="app-logo" src="../assets/old-vehicles_280x280.png" alt="app logo"/>
+            <img id="app-logo" src="../assets/soviet_boxers_280x280.png" alt="app logo"/>
             <div>
                 <p id="app-title-description">
                     {{$t("appTitleDescription")}}
                 </p>
                 <ul id="app-title-description-details">
-                    <li>{{$t("partNumbers")}}</li>
-                    <li>{{$t("dimensions")}}</li>
-                    <li>{{$t("replacers")}}</li>
+                    <li>{{$t("bikesTitleList")}}</li>
+                    <li>{{$t("partsTitleList")}}</li>
+                    <li>{{$t("featuresTitleList")}}</li>
                 </ul>
             </div>
         </div>
@@ -80,10 +80,10 @@
     }
 
     #app-title-description-details {
-        font-size: x-large;
+        font-size: larger;
         text-align: left;
-        padding-top: 16px;
-        margin-left: 60%;
+        padding-top: 20px;
+        margin-left: 54%;
     }
 
     #flag-counter-high {
@@ -118,8 +118,8 @@
         #app-title-description-details {
             font-size: initial;
             text-align: left;
-            padding-top: 6px;
-            margin-left: 50%;
+            padding-top: 10px;
+            margin: 0;
         }
 
         .flag-counter {
