@@ -1,6 +1,11 @@
 <template>
     <div class="backgrounded-area">
-        <p>{{"#ural #dnepr #m-72 #mv-750 #k-750 #k-650 #m-66 #cossack #neval"}}</p>
+        <p v-if="$route.params.lang === 'ru'">
+            {{"#урал #днепр #м-72 #мв-750 #к-750 #к-650 #м-61 #м-62 #м-66 #м-67 #м-67-36"}}
+        </p>
+        <p v-else>
+            {{"#ural #dnepr #m-72 #mv-750 #k-750 #k-650 #m-66 #cossack #neval"}}
+        </p>
         <br>
         <p id="app-main-description">
             <span class="colored-text">{{$t('appName')}}</span>

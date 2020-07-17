@@ -9,14 +9,15 @@ export const i18n = new VueI18n({
     messages: {
         en: {
             details: "Details",
-            appName: "Old Vehicles. Soviet Boxers Parts Catalog",
-            appTitleDescription: "E-catalog for soviet sidecar motorcycles (KMZ, IMZ)",
+            appName: "Old Vehicles",
+            appTitleDescription: "E-catalog for soviet boxers",
             bikesTitleList: "Ural, Dnepr, K-750, M-72, ect",
             partsTitleList: "Seals, bearings, filters, ect",
             featuresTitleList: "Catalogue numbers, analogs",
             language: "Language",
-            appMainDescription: "is an e-catalog for soviet sidecar motorcycles (KMZ, IMZ)"
-                + " focused on standard parts and their modern high quality analogs.",
+            appMainDescription: "is a mobile application that is an e-catalog for soviet sidecar"
+                + " motorcycles (KMZ, IMZ) focused on standard parts and their modern high"
+                + " quality analogs.",
             forAndroidDevices: "For Android OS devices",
             forIOSDevices: "Phone, tablet",
             forPC: "PC, laptop",
@@ -75,14 +76,14 @@ export const i18n = new VueI18n({
         },
         ru: {
             details: "Развернуть описание",
-            appName: "Оппозиты ИМЗ и КМЗ. Справочник запчастей",
-            appTitleDescription: "Электронный каталог для тяжелых мотоциклов",
+            appName: "Мотоциклы ИМЗ КМЗ",
+            appTitleDescription: "Справочник запчастей для оппозитов",
             bikesTitleList: "Урал, Днепр, К-750, М-72 и др.",
             partsTitleList: "Сальники, подшипники, фильтры и др.",
             featuresTitleList: "Каталожные номера, аналоги",
             language: "Язык",
-            appMainDescription: "это электронный каталог для советских тяжелых мотоциклов с коляской,"
-                + " ориентированный на стандартные запчасти и их современные качественные аналоги.",
+            appMainDescription: "это мобильное приложение, представляющее из себя справочник"
+                + " запчастей и их современных аналогов для советских тяжелых мотоциклов с коляской.",
             forIOSDevices: "Телефон, планшет",
             forAndroidDevices: "Для девайсов на ОС Android",
             forPC: "Компьютер, ноутбук",
