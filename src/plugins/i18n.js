@@ -15,9 +15,10 @@ export const i18n = new VueI18n({
             partsTitleList: "Seals, bearings, filters, ect",
             featuresTitleList: "Catalogue numbers, analogs",
             language: "Language",
-            appMainDescription: "is a mobile application that is an e-catalog for soviet sidecar"
-                + " motorcycles (KMZ, IMZ) focused on standard parts and their modern high"
-                + " quality analogs.",
+            appMainDescription: "is a mobile application that is an e-catalog focused on standard"
+                + " parts and their modern high quality analogs for soviet sidecar motorcycles"
+                + " manufactured by IMZ and KMZ: Ural (Cossack), Dnepr (Neval), MV-750, K-750,"
+                + " K-650, M-72.",
             forAndroidDevices: "For Android OS devices",
             forIOSDevices: "Phone, tablet",
             forPC: "PC, laptop",
@@ -83,7 +84,8 @@ export const i18n = new VueI18n({
             featuresTitleList: "Каталожные номера, аналоги",
             language: "Язык",
             appMainDescription: "это мобильное приложение, представляющее из себя справочник"
-                + " запчастей и их современных аналогов для советских тяжелых мотоциклов с коляской.",
+                + " запчастей и их современных аналогов для советских тяжелых мотоциклов с"
+                + " коляской производства заводов ИМЗ и КМЗ: Урал, Днепр, МВ-750, К-750, К-650, М-72.",
             forIOSDevices: "Телефон, планшет",
             forAndroidDevices: "Для девайсов на ОС Android",
             forPC: "Компьютер, ноутбук",
