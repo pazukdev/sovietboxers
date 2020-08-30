@@ -35,17 +35,19 @@
         <NavigateToAppSection/>
         <br>
         <br>
+        <DonationSection/>
     </div>
 </template>
 
 <script>
-    import NavigateToAppSection from "@/components/NavigateToAppSection";
-    import AppVersions from "@/components/AppVersions";
+import NavigateToAppSection from "@/components/NavigateToAppSection";
+import AppVersions from "@/components/AppVersions";
+import DonationSection from "@/components/DonationSection";
 
-    export default {
+export default {
         name: "MainInfoSection",
 
-        components: {AppVersions, NavigateToAppSection},
+        components: {DonationSection, AppVersions, NavigateToAppSection},
 
         methods: {
             getAppDescription() {

@@ -1,10 +1,8 @@
 <template>
-    <div class="backgrounded-area" style="text-align: center">
-<!--        <p>{{$t("appIsFree")}}</p>-->
-<!--        <br>-->
+    <div style="text-align: center">
         <p><b>{{$t("youCanHelpTheProject")}}</b></p>
         <br>
-        <details open>
+        <details>
             <summary><img src="../assets/beer.png" alt="beer icon" :title="$t('pour')"></summary>
             <br>
             <p>{{$t("projectTakesTime")}}</p>

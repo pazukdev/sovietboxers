@@ -17,7 +17,9 @@
   }
 
   #main-div {
-    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    /*font-family: 'Avenir', Helvetica, Arial, sans-serif;*/
+      font-family: "Courier New", Courier, monospace;
+      line-height: 26px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     display: flex;
