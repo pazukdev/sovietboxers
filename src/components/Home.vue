@@ -2,8 +2,6 @@
     <div id="website-main-div">
         <Header/>
         <MotorcycleGallery/>
-        <div>
-        </div>
         <MainInfoSection/>
         <div class="backgrounded-area">
             <div v-if="$route.params.lang === 'en'">

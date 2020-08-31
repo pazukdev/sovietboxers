@@ -1,12 +1,12 @@
 <template>
     <div class="backgrounded-area">
-        <p v-if="$route.params.lang === 'ru'">
+        <span v-if="$route.params.lang === 'ru'">
             {{"#урал #днепр #м-72 #мв-750 #к-750 #к-650 #м-61 #м-62 #м-66 #м-67 #м-67-36"}}
-        </p>
-        <p v-else>
+        </span>
+        <span v-else>
             {{"#ural #dnepr #m-72 #mv-750 #k-750 #k-650 #m-66 #cossack #neval"}}
-        </p>
-        <br>
+        </span>
+        <br><br>
         <p id="app-main-description">
             <span class="colored-text">{{$t('appName')}}</span>
             {{" - "}}
@@ -36,6 +36,12 @@
         <br>
         <br>
         <DonationSection/>
+        <div style="text-align: right">
+            <router-link :to="{name: 'privacy_policy', params: {lang: $route.params.lang}}"
+                         style="text-align: right">
+                {{$t("privacyPolicy")}}
+            </router-link>
+        </div>
     </div>
 </template>
 

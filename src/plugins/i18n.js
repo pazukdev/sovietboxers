@@ -72,7 +72,8 @@ export const i18n = new VueI18n({
             appIsFree: "The project is nonprofit and ads-free",
             dontForgetToRate: "If the app is helpful to you, please, don't forget to rate the app"
                 + " and leave a review. It's very important for the project",
-            lastVersionDescription: "About v2.0"
+            lastVersionDescription: "About v2.0",
+            privacyPolicy: "Privacy Policy"
 
         },
         ru: {
@@ -139,7 +140,8 @@ export const i18n = new VueI18n({
             appIsFree: "Этот проект некоммерческий и без рекламы",
             dontForgetToRate: "Если это приложение оказалось полезным для вас,"
                 + " пожалуйста, не забудьте поставить ему оценку и написать отзыв.",
-            lastVersionDescription: "О версии 2.0"
+            lastVersionDescription: "О версии 2.0",
+            privacyPolicy: "Политика конфиденциальности"
         }
     }
 });
