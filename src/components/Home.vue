@@ -1,6 +1,14 @@
 <template>
     <div id="website-main-div">
         <Header/>
+        <div style="text-align: right; margin: 20px; background: #212121">
+            <!-- admitad.banner: mrycz0d72m50754f973b3b993522d4 Dok.UA -->
+            <a target="_blank" rel="nofollow"
+               href="https://ad.admitad.com/g/mrycz0d72m50754f973b3b993522d4/?i=4">
+                <img alt="Dok.UA" src="https://ad.admitad.com/b/mrycz0d72m50754f973b3b993522d4/"/>
+            </a>
+            <!-- /admitad.banner -->
+        </div>
         <MotorcycleGallery/>
         <MainInfoSection/>
         <div class="backgrounded-area">
@@ -113,6 +121,7 @@
             <p>{{$t("dontForgetToRate")}}</p>
             <GooglePlayLink/>
         </div>
+        <PartnerGroup/>
         <Footer/>
     </div>
 </template>
@@ -123,11 +132,13 @@ import MotorcycleGallery from "@/components/MotorcycleGallery";
 import Footer from "@/components/Footer";
 import MainInfoSection from "@/components/MainInfoSection";
 import GooglePlayLink from "@/components/GooglePlayLink";
+import PartnerGroup from "@/components/PartnerGroup";
 
 export default {
         name: "Home",
 
         components: {
+            PartnerGroup,
             GooglePlayLink,
             MainInfoSection,
             Header,

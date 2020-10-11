@@ -9,7 +9,7 @@ const router = new VueRouter({
 
     routes: [
         // possible not valid urls
-        // { path: '/', redirect: { path: '/en' }},
+        { path: '/', redirect: { path: '/en' }},
         // urls to components binding
         { path: '/:lang', name: 'home', component: Home },
         { path: '/privacy-policy/:lang', name: 'privacy_policy', component: PrivacyPolicy }

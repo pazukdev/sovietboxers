@@ -1,6 +1,10 @@
 <template>
-    <div class="backgrounded-area">
-        <br><p class="bold-text">Privacy Policy for Soviet Boxers</p><br>
+    <div id="privacy-policy" class="backgrounded-area">
+        <br>
+        <p class="bold-text" style="text-align: center">
+            Privacy Policy for Soviet Boxers
+        </p>
+        <br>
 
         <p>At Soviet Boxers, accessible from https://www.sovietboxers.com, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Soviet Boxers and how we use it.</p>
 
@@ -44,7 +48,7 @@
 
         <br><p class="bold-text">Google DoubleClick DART Cookie</p><br>
 
-        <p>Google is one of a third-party vendor on our site. It also uses cookies, known as DART cookies, to serve ads to our site visitors based upon their visit to www.website.com and other sites on the internet. However, visitors may choose to decline the use of DART cookies by visiting the Google ad and content network Privacy Policy at the following URL – <a href="https://policies.google.com/technologies/ads">https://policies.google.com/technologies/ads</a></p>
+        <p>Google is one of a third-party vendor on our site. It also uses cookies, known as DART cookies, to serve ads to our site visitors based upon their visit to www.website.com and other sites on the internet. However, visitors may choose to decline the use of DART cookies by visiting the – <a href="https://policies.google.com/technologies/ads">{{"Google ad Privacy Policy"}}</a></p>
 
         <br><p class="bold-text">Our Advertising Partners</p><br>
 
@@ -52,12 +56,9 @@
         <br>
         <ul>
             <li>
-                <p>Google</p>
-                <p>
-                    <a href="https://policies.google.com/technologies/ads">
-                    https://policies.google.com/technologies/ads
-                    </a>
-                </p>
+                <a href="https://policies.google.com/technologies/ads">
+                    {{"Google ad Privacy Policy"}}
+                </a>
             </li>
         </ul>
 
@@ -112,5 +113,10 @@
 <style scoped>
 .bold-text {
     font-weight: bold;
+}
+@media only screen and (max-width: 640px) {
+    #privacy-policy {
+        /*width: 80%;*/
+    }
 }
 </style>

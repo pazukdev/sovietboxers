@@ -36,6 +36,7 @@
         <br>
         <br>
         <DonationSection/>
+        <br><br>
         <div style="text-align: right">
             <router-link :to="{name: 'privacy_policy', params: {lang: $route.params.lang}}"
                          style="text-align: right">

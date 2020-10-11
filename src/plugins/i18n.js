@@ -73,7 +73,11 @@ export const i18n = new VueI18n({
             dontForgetToRate: "If the app is helpful to you, please, don't forget to rate the app"
                 + " and leave a review. It's very important for the project",
             lastVersionDescription: "About v2.0",
-            privacyPolicy: "Privacy Policy"
+            privacyPolicy: "Privacy Policy",
+            ourAffiliates: "We recommend",
+            bikeAndCarParts: "Bike and car parts",
+            aliexpress: "Cheap products",
+            dok: "Auto parts"
 
         },
         ru: {
@@ -141,7 +145,10 @@ export const i18n = new VueI18n({
             dontForgetToRate: "Если это приложение оказалось полезным для вас,"
                 + " пожалуйста, не забудьте поставить ему оценку и написать отзыв.",
             lastVersionDescription: "О версии 2.0",
-            privacyPolicy: "Политика конфиденциальности"
+            privacyPolicy: "Политика конфиденциальности",
+            ourAffiliates: "Рекомендуем",
+            aliexpress: "Дешевые товары",
+            dok: "Автозапчасти"
         }
     }
 });
