@@ -12,6 +12,9 @@
         <MotorcycleGallery/>
         <MainInfoSection/>
         <div class="backgrounded-area">
+            <BearingSealTable/>
+        </div>
+        <div class="backgrounded-area">
             <div v-if="$route.params.lang === 'en'">
                 <p style="text-align: center; font-weight: bold">
                     For business
@@ -133,11 +136,13 @@ import Footer from "@/components/Footer";
 import MainInfoSection from "@/components/MainInfoSection";
 import GooglePlayLink from "@/components/GooglePlayLink";
 import PartnerGroup from "@/components/PartnerGroup";
+import BearingSealTable from "@/components/BearingSealTable";
 
 export default {
         name: "Home",
 
         components: {
+            BearingSealTable,
             PartnerGroup,
             GooglePlayLink,
             MainInfoSection,
