@@ -9,7 +9,7 @@ export const i18n = new VueI18n({
     messages: {
         en: {
             details: "Details",
-            appName: "Old Vehicles",
+            appName: "Soviet Boxers 2: Old Vehicles",
             appTitleDescription: "E-catalog for soviet boxers",
             bikesTitleList: "Ural, Dnepr, K-750, M-72, ect",
             partsTitleList: "Seals, bearings, filters, ect",
@@ -21,7 +21,7 @@ export const i18n = new VueI18n({
                 + " K-650, M-72.",
             forAndroidDevices: "For Android OS devices",
             forIOSDevices: "Phone, tablet",
-            forPC: "PC, laptop",
+            forPC: "For PC and laptop",
             googlePlayLinkTitle: "App on GooglePlay",
             directLinkToApp: "Any Android and IOS devices",
             clickToOpenTheApp: "Click to open the app",
@@ -55,8 +55,8 @@ export const i18n = new VueI18n({
             zoomInMessage: "If the phone is too small - zoom in browser view",
             startApp: "Start the app",
             close: "Close",
-            payPalDonationBox: "#1 Pay Pal donation box",
-            yandexDonationBox: "#2 Yandex donation box",
+            payPalDonationBox: "Pay Pal donation box",
+            yandexDonationBox: "Yandex donation box",
             fbGroupTitle: "Facebook group",
             vkCommunityTitle: "vk community",
             bearingsAndSeals: "Bearings and seals",
@@ -99,7 +99,16 @@ export const i18n = new VueI18n({
             withWashers: 'with washers',
             simplifiedTables: 'Simplified tables',
             detailedInfoInTheApp: 'Detailed info in the app',
-            k750: 'K-750'
+            k750: 'K-750',
+            ebay: 'World\'s marketplace',
+            getApp: 'Get the app',
+            getAppForBitcoin: "Get the app (donate Bitcoins)",
+            donateHere: "The project accepts donations to:",
+            downloadApp: "Download the application",
+            donate: "Donate",
+            getTheApp: "and get the app",
+            rub: "RUR",
+            donationToHelpTheProject: "Donation to help the project"
         },
         ru: {
             details: "Развернуть описание",
@@ -114,7 +123,7 @@ export const i18n = new VueI18n({
                 + " коляской производства заводов ИМЗ и КМЗ: Урал, Днепр, МВ-750, К-750, К-650, М-72.",
             forIOSDevices: "Телефон, планшет",
             forAndroidDevices: "Для девайсов на ОС Android",
-            forPC: "Компьютер, ноутбук",
+            forPC: "Для компьютера и ноутбука",
             googlePlayLinkTitle: "Приложение на GooglePlay",
             directLinkToApp: "Любые девайсы на Android и IOS",
             clickToOpenTheApp: "Кликните чтобы открыть приложение",
@@ -148,8 +157,8 @@ export const i18n = new VueI18n({
             zoomInMessage: "Если телефон слишком маленький - приблизьте вид в браузере",
             startApp: "Старт приложения",
             close: "Закрыть",
-            payPalDonationBox: "#1 Pay Pal ящик для доната",
-            yandexDonationBox: "#2 Яндекс ящик для доната",
+            payPalDonationBox: "Pay Pal ящик для доната",
+            yandexDonationBox: "Яндекс ящик для доната",
             fbGroupTitle: "Группа в Facebook",
             vkCommunityTitle: "Сообщество в vk",
             bearingsAndSeals: "Подшипники и сальники",
@@ -191,7 +200,16 @@ export const i18n = new VueI18n({
             withWashers: 'с шайбами',
             simplifiedTables: 'Упрощенные таблицы',
             detailedInfoInTheApp: 'Подробная информация о подшипниках, сальниках и др. деталях в приложении',
-            k750: 'К-750'
+            k750: 'К-750',
+            ebay: 'World\'s marketplace',
+            getApp: 'Получить приложение',
+            getAppForBitcoin: "Получить приложение (донат в Биткойнах)",
+            donateHere: "Задонатить можно сюда:",
+            downloadApp: "Скачать приложение",
+            donate: " Задонать",
+            getTheApp: "и получи приложение",
+            rub: "руб.",
+            donationToHelpTheProject: "Донат на поддержку проекта"
         }
     }
 });

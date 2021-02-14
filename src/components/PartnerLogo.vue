@@ -4,7 +4,7 @@
             <img :src="imgUrl" alt="logo" class="logo-max-size"/>
         </a>
         <br>
-        <p>{{websiteName}}</p>
+<!--        <p>{{websiteName}}</p>-->
         <p>{{text}}</p>
     </div>
 

@@ -32,6 +32,12 @@
             </details>
         </div>
         <br>
+        <PaidApp :amount-equal-to="$t('6 USD (5 EUR)')"
+                 :dog-link="'snuzn'"
+                 :bitcoin-link="'4vupy'"
+                 :pay-pal-id="'QMACP5QVGQ4RY'"
+                 :amount-r-u-r="450"
+                 :success-url-yandex="'https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F17Ee_9o-zHv60UwJgTK3Gz9JWFHc_OuHE%2Fview%3Fusp%3Dsharing'"/>
         <NavigateToAppSection/>
         <br>
         <br>
@@ -49,12 +55,18 @@
 <script>
 import NavigateToAppSection from "@/components/NavigateToAppSection";
 import AppVersions from "@/components/AppVersions";
+import PaidApp from "@/components/PaidApp";
 import DonationSection from "@/components/DonationSection";
 
 export default {
         name: "MainInfoSection",
 
-        components: {DonationSection, AppVersions, NavigateToAppSection},
+        components: {
+            PaidApp,
+            DonationSection,
+            AppVersions,
+            NavigateToAppSection
+        },
 
         methods: {
             getAppDescription() {

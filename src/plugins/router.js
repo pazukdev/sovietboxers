@@ -12,7 +12,7 @@ const router = new VueRouter({
         { path: '/', redirect: { path: '/en' }},
         // urls to components binding
         { path: '/:lang', name: 'home', component: Home },
-        { path: '/privacy-policy/:lang', name: 'privacy_policy', component: PrivacyPolicy }
+        { path: '/privacy-policy/:lang', name: 'privacy_policy', component: PrivacyPolicy },
 
     ]
 });

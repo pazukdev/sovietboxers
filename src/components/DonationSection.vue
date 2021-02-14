@@ -7,31 +7,46 @@
             <br>
             <p>{{$t("projectTakesTime")}}</p>
             <br>
-            <details>
-                <summary>{{$t("payPalDonationBox")}}</summary>
-                <br>
-                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                    <input type="hidden" name="cmd" value="_donations" />
-                    <input type="hidden" name="business" value="old.vehicles.app@gmail.com" />
-                    <input type="hidden" name="item_name" value="Donation to help the project" />
-                    <input type="hidden" name="currency_code" value="USD" />
-                    <input type="image"
-                           src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
-                           border="0" name="submit"
-                           title="Donate with PayPal"
-                           alt="Donate with PayPal button"/>
-                    <img alt="" border="0" width="1" height="1"
-                         src="https://www.paypal.com/en_US/i/scr/pixel.gif"/>
-                </form>
-            </details>
-            <br>
-            <details>
+            <p>{{$t('donateHere')}}</p>
+            <br/>
+            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/74.png">
+            <br/>
+            <br/>
+            Dogecoin wallet: DPpswmUU9Bquo4HRcU8ZQuUkLTE8uxLcqs
+            <br/>
+            <br/>
+            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/1.png">
+            <br/>
+            <br/>
+            Bitcoin wallet: 34JoJe5Xd8qAVUewdjh44VP6aDmr5uWXLB
+            <br/>
+            <br/>
+            <img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_74x46.jpg">
+            <br/>
+            <br/>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_donations" />
+                <input type="hidden" name="business" value="old.vehicles.app@gmail.com" />
+                <input type="hidden" name="item_name" value="Donation to help the project" />
+                <input type="hidden" name="currency_code" value="USD" />
+                <input type="image"
+                       src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
+                       border="0" name="submit"
+                       title="Donate with PayPal"
+                       alt="Donate with PayPal"/>
+                <img alt="" border="0" width="1" height="1"
+                     src="https://www.paypal.com/en_US/i/scr/pixel.gif"/>
+            </form>
+
+            <br/>
+            <details open>
                 <summary>{{$t("yandexDonationBox")}}</summary>
                 <br>
-                <iframe id="yandex-donate-form"
-                        src="https://money.yandex.ru/quickpay/shop-widget?writer=seller&targets=Donation%20to%20help%20the%20project%20%2F%20%D0%94%D0%BE%D0%BD%D0%B0%D1%82%20%D0%BD%D0%B0%20%D0%BF%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%BA%D1%83%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0&targets-hint=&default-sum=&button-text=13&payment-type-choice=on&comment=on&hint=&successURL=https%3A%2F%2Fwww.sovietboxers.com&quickpay=shop&account=4100111880881391"
+                <iframe class="yandex-donate-form"
+                        :src="'https://money.yandex.ru/quickpay/shop-widget?writer=seller&targets=' + $t('donationToHelpTheProject') + '&targets-hint=&default-sum=&button-text=13&payment-type-choice=on&comment=on&hint=&successURL=https%3A%2F%2Fwww.sovietboxers.com&quickpay=shop&account=4100111880881391'"
                         width="423" height="301" frameborder="0" allowtransparency="true" scrolling="no"/>
             </details>
+
             <br><br>
             <div style="text-align: left">
                 <div v-if="$route.params.lang === 'en'">

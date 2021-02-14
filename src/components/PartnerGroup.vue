@@ -5,6 +5,10 @@
         </p>
         <div>
             <PartnerLogo style="display: inline-block" class="logo-margin"
+                         img-url="https://static.ebayinc.com/static/theme/images/logo.svg?v=1600914274"
+                         url="https://ad.admitad.com/g/kz1hwx56iv50754f973b64d9e52862/"
+                         website-name="ebay.com" :text="$t('ebay')"/>
+            <PartnerLogo style="display: inline-block" class="logo-margin"
                          img-url="https://cdn.admitad-connect.com/public/campaign/images/2015/05/12/a81cc17e95c570a41c661fb1aa6c6439.jpg"
                          url="https://alitems.com/g/1e8d11449450754f973b16525dc3e8/"
                          website-name="aliexpress.com" :text="$t('aliexpress')"/>
@@ -37,6 +41,6 @@ export default {
 }
 
 .logo-margin {
-    margin: 6px;
+    margin: 10px;
 }
 </style>

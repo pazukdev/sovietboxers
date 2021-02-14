@@ -1,19 +1,19 @@
 <template>
     <div id="website-main-div">
         <Header/>
-        <div style="text-align: right; margin: 20px; background: #212121">
-            <!-- admitad.banner: mrycz0d72m50754f973b3b993522d4 Dok.UA -->
-            <a target="_blank" rel="nofollow"
-               href="https://ad.admitad.com/g/mrycz0d72m50754f973b3b993522d4/?i=4">
-                <img alt="Dok.UA" src="https://ad.admitad.com/b/mrycz0d72m50754f973b3b993522d4/"/>
-            </a>
-            <!-- /admitad.banner -->
-        </div>
         <MotorcycleGallery/>
         <MainInfoSection/>
-        <div class="backgrounded-area">
-            <BearingSealTable/>
-        </div>
+
+<!--        <div style="text-align: center; margin: 20px">-->
+<!--            &lt;!&ndash; admitad.banner: rmr9pcfi9s50754f973b64d9e52862 eBay Many GEOs &ndash;&gt;-->
+<!--            <a target="_blank" rel="nofollow"-->
+<!--               href="https://ad.admitad.com/g/rmr9pcfi9s50754f973b64d9e52862/?i=4">-->
+<!--                <img src="https://ad.admitad.com/b/rmr9pcfi9s50754f973b64d9e52862/"-->
+<!--                     alt="eBay Many GEOs"/>-->
+<!--            </a>-->
+<!--            &lt;!&ndash; /admitad.banner &ndash;&gt;-->
+<!--        </div>-->
+
         <div class="backgrounded-area">
             <div v-if="$route.params.lang === 'en'">
                 <p style="text-align: center; font-weight: bold">
@@ -120,11 +120,75 @@
                 </p>
             </div>
         </div>
-        <div class="backgrounded-area" style="text-align: center">
-            <p>{{$t("dontForgetToRate")}}</p>
-            <GooglePlayLink/>
+
+        <BearingSealTable/>
+
+        <div class="backgrounded-area">
+            <div v-if="$route.params.lang === 'ru'">
+                <div style="text-align: center">
+                    <p class="colored-text">Soviet Boxers 1: Сальники и подшипники</p>
+                    <br>
+                    <p>Старая версия приложения снова доступна для скачивания!</p>
+                    <br/>
+                    <br/>
+                    <img src="https://i.postimg.cc/6pjwLWRg/old-app-ru.png">
+                    <br/>
+                    <br/>
+                </div>
+                <div>
+                    <ul>
+                        <li>Старое приложение работает шутрее, чем 2-ая версия</li>
+                        <li>100% оффлайновое</li>
+                        <li>Без рекламы</li>
+                        <li>Только для девайсов на Android</li>
+                    </ul>
+                </div>
+
+            </div>
+            <div v-else>
+                <div style="text-align: center">
+                    <p class="colored-text">Soviet Boxers 1: Seals & Bearings</p>
+                    <br>
+                    <p>Old app version now opened for download!</p>
+                    <br/>
+                    <br/>
+                    <img src="https://i.postimg.cc/qMPzc7Gq/web-2-en.png">
+                    <br/>
+                    <br/>
+                </div>
+                <div>
+                    <ul>
+                        <li>It's faster than version 2.0</li>
+                        <li>100% offline</li>
+                        <li>No ads</li>
+                        <li>For Android devices only</li>
+                    </ul>
+                </div>
+            </div>
+            <br/>
+            <br/>
+            <PaidApp :amount-equal-to="$t('5 USD (4 EUR)')"
+                     :dog-link="'odytd'"
+                     :bitcoin-link="'hajvs'"
+                     :pay-pal-id="'BFUN69FHT3CAY'"
+                     :amount-r-u-r="370"
+                     :success-url-yandex="'https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F1d2GLvO7p2DOzMUOAYmkoWhtO3SYcitHk%2Fview%3Fusp%3Dsharing'"/>
         </div>
-        <PartnerGroup/>
+
+<!--        <div style="text-align: center">-->
+<!--            &lt;!&ndash; admitad.banner: 3785j823mq50754f973b16525dc3e8 AliExpress WW &ndash;&gt;-->
+<!--            <a target="_blank" rel="nofollow"-->
+<!--               href="https://alitems.com/g/3785j823mq50754f973b16525dc3e8/?i=4">-->
+<!--                <img src="https://ad.admitad.com/b/3785j823mq50754f973b16525dc3e8/"-->
+<!--                     alt="AliExpress WW"/>-->
+<!--            </a>-->
+<!--            &lt;!&ndash; /admitad.banner &ndash;&gt;-->
+<!--        </div>-->
+<!--        <div class="backgrounded-area" style="text-align: center">-->
+<!--            <p>{{$t("dontForgetToRate")}}</p>-->
+<!--            <GooglePlayLink/>-->
+<!--        </div>-->
+<!--        <PartnerGroup/>-->
         <Footer/>
     </div>
 </template>
@@ -134,17 +198,21 @@ import Header from "@/components/Header";
 import MotorcycleGallery from "@/components/MotorcycleGallery";
 import Footer from "@/components/Footer";
 import MainInfoSection from "@/components/MainInfoSection";
-import GooglePlayLink from "@/components/GooglePlayLink";
-import PartnerGroup from "@/components/PartnerGroup";
+// import GooglePlayLink from "@/components/GooglePlayLink";
+// import PartnerGroup from "@/components/PartnerGroup";
 import BearingSealTable from "@/components/BearingSealTable";
+import PaidApp from "@/components/PaidApp";
+// import DonationSection from "@/components/DonationSection";
 
 export default {
         name: "Home",
 
         components: {
+            // DonationSection,
+            PaidApp,
             BearingSealTable,
-            PartnerGroup,
-            GooglePlayLink,
+            // PartnerGroup,
+            // GooglePlayLink,
             MainInfoSection,
             Header,
             MotorcycleGallery,
@@ -182,8 +250,11 @@ export default {
     }
 
     @media only screen and (max-width: 640px) {
-        #yandex-donate-form {
+        .yandex-donate-form {
             width: 100%;
+        }
+        #aliexpress-banner {
+            visibility: hidden;
         }
     }
 </style>
