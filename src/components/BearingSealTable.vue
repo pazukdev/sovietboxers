@@ -243,12 +243,20 @@
                 <p>{{$t('detailedInfoInTheApp')}}</p>
             </div>
         </div>
+        <br>
+        <br>
+        <br>
+        <DonationSection/>
+        <br>
+        <br>
     </div>
 </template>
 
 <script>
+import DonationSection from "@/components/DonationSection";
 export default {
-    name: "BearingSealTable"
+    name: "BearingSealTable",
+    components: {DonationSection}
 }
 </script>
 

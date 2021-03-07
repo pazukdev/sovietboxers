@@ -9,7 +9,7 @@ export const i18n = new VueI18n({
     messages: {
         en: {
             details: "Details",
-            appName: "Soviet Boxers 2: Old Vehicles",
+            appName: "Soviet Boxers",
             appTitleDescription: "E-catalog for soviet boxers",
             bikesTitleList: "Ural, Dnepr, K-750, M-72, ect",
             partsTitleList: "Seals, bearings, filters, ect",
@@ -108,11 +108,15 @@ export const i18n = new VueI18n({
             donate: "Donate",
             getTheApp: "and get the app",
             rub: "RUR",
-            donationToHelpTheProject: "Donation to help the project"
+            donationToHelpTheProject: "Donation to help the project",
+            projectClosed: "Project closed",
+            projectClosedExplanation: "It was 2 years of plans, hopes and hard work. Thanks to everyone who supported.",
+            firstVersionName: "Version 1. Soviet Boxers: Seals & Bearings",
+            secondVersionName: "Version 2. Old Vehicles"
         },
         ru: {
             details: "Развернуть описание",
-            appName: "Мотоциклы ИМЗ КМЗ",
+            appName: "Soviet Boxers",
             appTitleDescription: "Справочник запчастей для оппозитов",
             bikesTitleList: "Урал, Днепр, К-750, М-72 и др.",
             partsTitleList: "Сальники, подшипники, фильтры и др.",
@@ -209,7 +213,11 @@ export const i18n = new VueI18n({
             donate: " Задонать",
             getTheApp: "и получи приложение",
             rub: "руб.",
-            donationToHelpTheProject: "Донат на поддержку проекта"
+            donationToHelpTheProject: "Донат на поддержку проекта",
+            projectClosed: "Проект закрыт",
+            projectClosedExplanation: "Это было 2 года планов, надежд и тяжелой работы. Спасибо всем кто поддерживал.",
+            firstVersionName: "Версия 1. Soviet Boxers: Сальники и подшипники",
+            secondVersionName: "Версия 2. Старая техника"
         }
     }
 });

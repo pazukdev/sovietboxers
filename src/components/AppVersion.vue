@@ -1,7 +1,7 @@
 <template>
     <div class="app-version-div">
         <p v-if="versionPublicationDate !== undefined">{{versionPublicationDate}}</p>
-        <p class="colored-text" v-if="version !== undefined">{{"v " + version}}</p>
+<!--        <p class="colored-text" v-if="version !== undefined">{{"v " + version}}</p>-->
         <ul>
             <li v-for="update in updates" :key="update">
                 {{update}}

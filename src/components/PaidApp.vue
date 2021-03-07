@@ -4,16 +4,16 @@
             <summary>{{getDonateAndGetTheAppText(amountEqualTo)}}</summary>
             <br/>
 
-            <form action="https://www.paypal.com/donate" method="post" target="_top">
-                <input type="hidden" name="hosted_button_id" :value="payPalId" />
-                <input type="image"
-                       src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
-                       border="0" name="submit"
-                       title="Donate with PayPal"
-                       alt="Donate with PayPal"/>
-                <img alt="" border="0" width="1" height="1"
-                     src="https://www.paypal.com/en_US/i/scr/pixel.gif"/>
-            </form>
+<!--            <form action="https://www.paypal.com/donate" method="post" target="_top">-->
+<!--                <input type="hidden" name="hosted_button_id" :value="payPalId" />-->
+<!--                <input type="image"-->
+<!--                       src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"-->
+<!--                       border="0" name="submit"-->
+<!--                       title="Donate with PayPal"-->
+<!--                       alt="Donate with PayPal"/>-->
+<!--                <img alt="" border="0" width="1" height="1"-->
+<!--                     src="https://www.paypal.com/en_US/i/scr/pixel.gif"/>-->
+<!--            </form>-->
 
 
             <br/>
@@ -29,13 +29,13 @@
                 {{getDonateAndGetTheAppText("Dogecoin")}}
             </a>
             <br/><br/>
-            <details open>
-                <summary>{{"Yandex (RUR)"}}</summary>
-                <br>
-                <iframe class="yandex-donate-form"
-                        :src="'https://yoomoney.ru/quickpay/shop-widget?writer=seller&targets=' + getDonateAndGetTheAppText(amountRUR + ' ' + $t('rub')) + '&targets-hint=&default-sum=' + amountRUR + '&button-text=13&payment-type-choice=on&mobile-payment-type-choice=on&comment=off&hint=&successURL=' + successUrlYandex + '&quickpay=shop&account=4100111880881391'"
-                        width="423" height="329" frameborder="0" allowtransparency="true" scrolling="no"/>
-            </details>
+<!--            <details open>-->
+<!--                <summary>{{"Yandex (RUR)"}}</summary>-->
+<!--                <br>-->
+<!--                <iframe class="yandex-donate-form"-->
+<!--                        :src="'https://yoomoney.ru/quickpay/shop-widget?writer=seller&targets=' + getDonateAndGetTheAppText(amountRUR + ' ' + $t('rub')) + '&targets-hint=&default-sum=' + amountRUR + '&button-text=13&payment-type-choice=on&mobile-payment-type-choice=on&comment=off&hint=&successURL=' + successUrlYandex + '&quickpay=shop&account=4100111880881391'"-->
+<!--                        width="423" height="329" frameborder="0" allowtransparency="true" scrolling="no"/>-->
+<!--            </details>-->
         </details>
     </div>
 </template>

@@ -14,35 +14,106 @@
         </p>
         <br>
         <div>
-            <details>
-                <summary style="text-align: left">{{$t("details")}}</summary>
-                <AppVersions :descriptions="getAppDescription()"/>
-            </details>
+<!--            <details>-->
+<!--                <summary style="text-align: left">{{$t("details")}}</summary>-->
+<!--                <AppVersions :descriptions="getAppDescription()"/>-->
+<!--            </details>-->
             <br>
             <details>
-                <summary style="text-align: left">{{$t("lastVersionDescription")}}</summary>
+                <summary style="text-align: left">{{$t("secondVersionName")}}</summary>
+                <br>
+                <p class="colored-text" style="text-align: center">
+                    {{$t("secondVersionName")}}
+                </p>
                 <AppVersions :descriptions="getAppV20Description()"/>
                 <br>
                 <br>
-                <details>
-                    <summary>{{$t('appVersions')}}</summary>
-                    <AppVersions :descriptions="getOldAppVersionsDescriptions()"/>
-                    <p style="text-align: center">{{"***"}}</p>
-                </details>
+<!--                <details>-->
+<!--                    <summary>{{$t('appVersions')}}</summary>-->
+<!--                    <AppVersions :descriptions="getOldAppVersionsDescriptions()"/>-->
+<!--                    <p style="text-align: center">{{"***"}}</p>-->
+<!--                </details>-->
+
+                <div style="text-align: center">
+                    <div id="project-closed">
+                        <p style="color: #101010; font-size: large; font-weight: bold">
+                            {{$t("projectClosed") + "."}}
+                        </p>
+                        <br>
+                        {{$t("projectClosedExplanation")}}
+                    </div>
+                </div>
+                <br>
+                <br>
             </details>
         </div>
         <br>
-        <PaidApp :amount-equal-to="$t('6 USD (5 EUR)')"
-                 :dog-link="'snuzn'"
-                 :bitcoin-link="'4vupy'"
-                 :pay-pal-id="'QMACP5QVGQ4RY'"
-                 :amount-r-u-r="450"
-                 :success-url-yandex="'https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F17Ee_9o-zHv60UwJgTK3Gz9JWFHc_OuHE%2Fview%3Fusp%3Dsharing'"/>
-        <NavigateToAppSection/>
         <br>
+
+<!--        <PaidApp :amount-equal-to="$t('6 USD (5 EUR)')"-->
+<!--                 :dog-link="'snuzn'"-->
+<!--                 :bitcoin-link="'4vupy'"-->
+<!--                 :pay-pal-id="'QMACP5QVGQ4RY'"-->
+<!--                 :amount-r-u-r="450"-->
+<!--                 :success-url-yandex="'https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F17Ee_9o-zHv60UwJgTK3Gz9JWFHc_OuHE%2Fview%3Fusp%3Dsharing'"/>-->
+<!--        <NavigateToAppSection/>-->
+
+        <details open>
+            <summary style="text-align: left">{{$t("firstVersionName")}}</summary>
+            <br>
+            <p style="text-align: center" class="colored-text">{{$t("firstVersionName")}}</p>
+            <br>
+            <div>
+                <div v-if="$route.params.lang === 'ru'">
+                    <div style="text-align: center">
+                        <p>Старая версия приложения снова доступна для скачивания!</p>
+                        <br>
+                        <br>
+                        <img src="https://i.postimg.cc/6pjwLWRg/old-app-ru.png">
+                        <br>
+                        <br>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>Старое приложение работает шутрее, чем 2-ая версия</li>
+                            <li>100% оффлайновое</li>
+                            <li>Без рекламы</li>
+                            <li>Только для девайсов на Android</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div v-else>
+                    <div style="text-align: center">
+                        <br>
+                        <p>Old app version now opened for download!</p>
+                        <br/>
+                        <br/>
+                        <img src="https://i.postimg.cc/qMPzc7Gq/web-2-en.png">
+                        <br/>
+                        <br/>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>It's faster than version 2.0</li>
+                            <li>100% offline</li>
+                            <li>No ads</li>
+                            <li>For Android devices only</li>
+                        </ul>
+                    </div>
+                </div>
+                <br/>
+                <br/>
+                <PaidApp :amount-equal-to="$t('5 USD (4 EUR)')"
+                         :dog-link="'odytd'"
+                         :bitcoin-link="'hajvs'"
+                         :pay-pal-id="'BFUN69FHT3CAY'"
+                         :amount-r-u-r="370"
+                         :success-url-yandex="'https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F1d2GLvO7p2DOzMUOAYmkoWhtO3SYcitHk%2Fview%3Fusp%3Dsharing'"/>
+            </div>
+        </details>
+
         <br>
-        <DonationSection/>
-        <br><br>
         <div style="text-align: right">
             <router-link :to="{name: 'privacy_policy', params: {lang: $route.params.lang}}"
                          style="text-align: right">
@@ -53,19 +124,17 @@
 </template>
 
 <script>
-import NavigateToAppSection from "@/components/NavigateToAppSection";
+// import NavigateToAppSection from "@/components/NavigateToAppSection";
 import AppVersions from "@/components/AppVersions";
 import PaidApp from "@/components/PaidApp";
-import DonationSection from "@/components/DonationSection";
 
 export default {
         name: "MainInfoSection",
 
         components: {
             PaidApp,
-            DonationSection,
             AppVersions,
-            NavigateToAppSection
+            // NavigateToAppSection
         },
 
         methods: {
@@ -142,4 +211,13 @@ export default {
 </script>
 
 <style scoped>
+
+#project-closed {
+    color: #101010;
+    background-color: orange;
+    width: 400px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
 </style>
