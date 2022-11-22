@@ -19,7 +19,7 @@
 <!--                <AppVersions :descriptions="getAppDescription()"/>-->
 <!--            </details>-->
             <br>
-            <details>
+            <details open>
                 <summary style="text-align: left">{{$t("secondVersionName")}}</summary>
                 <br>
                 <p class="colored-text" style="text-align: center">
@@ -34,21 +34,22 @@
 <!--                    <p style="text-align: center">{{"***"}}</p>-->
 <!--                </details>-->
 
-                <div style="text-align: center">
-                    <div id="project-closed">
-                        <p style="color: #101010; font-size: large; font-weight: bold">
-                            {{$t("projectClosed") + "."}}
-                        </p>
-                        <br>
-                        {{$t("projectClosedExplanation")}}
-                    </div>
-                </div>
-                <br>
-                <br>
+<!--                <div style="text-align: center">-->
+<!--                    <div id="project-closed">-->
+<!--                        <p style="color: #101010; font-size: large; font-weight: bold">-->
+<!--                            {{$t("projectClosed") + "."}}-->
+<!--                        </p>-->
+<!--                        <br>-->
+<!--                        {{$t("projectClosedExplanation")}}-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <br>-->
+<!--                <br>-->
+                <NavigateToAppSection/>
             </details>
         </div>
-        <br>
-        <br>
+<!--        <br>-->
+<!--        <br>-->
 
 <!--        <PaidApp :amount-equal-to="$t('6 USD (5 EUR)')"-->
 <!--                 :dog-link="'snuzn'"-->
@@ -58,7 +59,7 @@
 <!--                 :success-url-yandex="'https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F17Ee_9o-zHv60UwJgTK3Gz9JWFHc_OuHE%2Fview%3Fusp%3Dsharing'"/>-->
 <!--        <NavigateToAppSection/>-->
 
-        <details open>
+        <details>
             <summary style="text-align: left">{{$t("firstVersionName")}}</summary>
             <br>
             <p style="text-align: center" class="colored-text">{{$t("firstVersionName")}}</p>
@@ -104,12 +105,12 @@
                 </div>
                 <br/>
                 <br/>
-                <PaidApp :amount-equal-to="$t('5 USD (4 EUR)')"
-                         :dog-link="'odytd'"
-                         :bitcoin-link="'hajvs'"
-                         :pay-pal-id="'BFUN69FHT3CAY'"
-                         :amount-r-u-r="370"
-                         :success-url-yandex="'https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F1d2GLvO7p2DOzMUOAYmkoWhtO3SYcitHk%2Fview%3Fusp%3Dsharing'"/>
+<!--                <PaidApp :amount-equal-to="$t('5 USD (4 EUR)')"-->
+<!--                         :dog-link="'odytd'"-->
+<!--                         :bitcoin-link="'hajvs'"-->
+<!--                         :pay-pal-id="'BFUN69FHT3CAY'"-->
+<!--                         :amount-r-u-r="370"-->
+<!--                         :success-url-yandex="'https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F1d2GLvO7p2DOzMUOAYmkoWhtO3SYcitHk%2Fview%3Fusp%3Dsharing'"/>-->
             </div>
         </details>
 
@@ -124,17 +125,17 @@
 </template>
 
 <script>
-// import NavigateToAppSection from "@/components/NavigateToAppSection";
+import NavigateToAppSection from "@/components/NavigateToAppSection";
 import AppVersions from "@/components/AppVersions";
-import PaidApp from "@/components/PaidApp";
+// import PaidApp from "@/components/PaidApp";
 
 export default {
         name: "MainInfoSection",
 
         components: {
-            PaidApp,
+            // PaidApp,
             AppVersions,
-            // NavigateToAppSection
+            NavigateToAppSection
         },
 
         methods: {
@@ -215,7 +216,7 @@ export default {
 #project-closed {
     color: #101010;
     background-color: orange;
-    width: 400px;
+    width: 240px;
     padding: 20px;
     border-radius: 8px;
 }

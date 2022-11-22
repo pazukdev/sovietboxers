@@ -39,13 +39,13 @@
 <!--            </form>-->
 
             <br/>
-            <details open>
-                <summary>{{$t("yandexDonationBox")}}</summary>
-                <br>
-                <iframe class="yandex-donate-form"
-                        :src="'https://money.yandex.ru/quickpay/shop-widget?writer=seller&targets=' + $t('donationToHelpTheProject') + '&targets-hint=&default-sum=&button-text=13&payment-type-choice=on&comment=on&hint=&successURL=https%3A%2F%2Fwww.sovietboxers.com&quickpay=shop&account=4100111880881391'"
-                        width="423" height="301" frameborder="0" allowtransparency="true" scrolling="no"/>
-            </details>
+<!--            <details open>-->
+<!--                <summary>{{$t("yandexDonationBox")}}</summary>-->
+<!--                <br>-->
+<!--                <iframe class="yandex-donate-form"-->
+<!--                        :src="'https://money.yandex.ru/quickpay/shop-widget?writer=seller&targets=' + $t('donationToHelpTheProject') + '&targets-hint=&default-sum=&button-text=13&payment-type-choice=on&comment=on&hint=&successURL=https%3A%2F%2Fwww.sovietboxers.com&quickpay=shop&account=4100111880881391'"-->
+<!--                        width="423" height="301" frameborder="0" allowtransparency="true" scrolling="no"/>-->
+<!--            </details>-->
 
             <br><br>
 <!--            <div style="text-align: left">-->

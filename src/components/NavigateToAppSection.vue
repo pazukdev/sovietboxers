@@ -2,20 +2,20 @@
     <div id="navigate-to-app">
         <table>
             <tbody>
-<!--            <tr>-->
-<!--                <td>-->
-<!--                    {{$t("forAndroidDevices")}}<br>-->
-<!--                    <GooglePlayLink/>-->
-<!--                </td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td>-->
-<!--                    {{$t("forIOSDevices")}}<br>-->
-<!--                    <a target="_blank" href="https://www.old-vehicles.com" :title="$t('clickToOpenTheApp')">-->
-<!--                        {{$t("directLinkToApp")}}-->
-<!--                    </a>-->
-<!--                </td>-->
-<!--            </tr>-->
+            <tr>
+                <td>
+                    {{$t("forAndroidDevices")}}<br>
+                    <GooglePlayLink/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    {{$t("forIOSDevices")}}<br>
+                    <a target="_blank" href="https://www.old-vehicles.com" :title="$t('clickToOpenTheApp')">
+                        {{$t("directLinkToApp")}}
+                    </a>
+                </td>
+            </tr>
             <tr id="pc-only-tr">
                 <td>
                     {{$t("forPC")}}<br>
@@ -34,19 +34,21 @@
             <a class="close" :title="$t('close')" href="#" @click="closeSmartphoneModal()">X</a>
             <IPhoneEmulator></IPhoneEmulator>
         </div>
+        <br/>
+        <br/>
     </div>
 </template>
 
 <script>
 // import MobileEmulator from "@/components/MobileEmulator";
 import IPhoneEmulator from "@/components/IPhoneEmulator";
-// import GooglePlayLink from "@/components/GooglePlayLink";
+import GooglePlayLink from "@/components/GooglePlayLink";
 
     export default {
         name: "NavigateToAppSection",
 
         components: {
-            // GooglePlayLink,
+            GooglePlayLink,
             // MobileEmulator,
             IPhoneEmulator
         },
